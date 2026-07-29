@@ -41,9 +41,9 @@ $$
 
 ## 2. 面内拉应力是怎样产生的
 
-![面内拉应力由受限自由收缩产生的六面板机制图](images/14_in_plane_tensile_stress_origin.svg)
+![面内拉应力由受限自由收缩产生的六面板机制图](images/14_in_plane_tensile_stress_origin.png)
 
-*图 2。本项目六面板机制图，不是任何论文原图。图中只保留过程节点、关键变量与判据；各箭头为什么成立、适用边界是什么，分别由下文 2.1–2.4 节展开。100→97 只是用于判断应力符号的示意数字，不代表已测得的 LFP 面内收缩率。受约束颗粒膜的临界应力和弹性恢复依据 [Man & Russel, 2008](https://doi.org/10.1103/PhysRevLett.100.198302)，同步干燥应力与松弛依据 [Lewis et al., 1996](https://doi.org/10.1111/j.1151-2916.1996.tb08099.x)，通道裂纹能量结构依据 [Tirumkudulu & Russel, 2005](https://doi.org/10.1021/la048298k)。*
+*图 2。本项目六面板机制图，不是任何论文原图。正文嵌入 3600×3000 PNG 以固定不同 Markdown/iCloud 渲染器中的公式字体与上下标；[可缩放 SVG 源图](images/14_in_plane_tensile_stress_origin.svg)保留可编辑的数学文本。图中只保留过程节点、关键变量与判据；各箭头为什么成立、适用边界是什么，分别由下文 2.1–2.4 节展开。100→97 只是用于判断应力符号的示意数字，不代表已测得的 LFP 面内收缩率。受约束颗粒膜的临界应力和弹性恢复依据 [Man & Russel, 2008](https://doi.org/10.1103/PhysRevLett.100.198302)，同步干燥应力与松弛依据 [Lewis et al., 1996](https://doi.org/10.1111/j.1151-2916.1996.tb08099.x)，通道裂纹能量结构依据 [Tirumkudulu & Russel, 2005](https://doi.org/10.1021/la048298k)。*
 
 ### 2.1 一句话抓住符号转换
 
