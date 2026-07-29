@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="860" viewBox="0 0 1600 860" role="img" aria-labelledby="title desc">
+  <title id="title">凝胶的孔弹性干燥、空化与断裂</title>
+  <desc id="desc">展示饱和凝胶网络在表面脱溶剂后形成孔压梯度，并在表面侵气、内部空化与断裂之间分叉。</desc>
+  <defs>
+    <pattern id="mesh" width="62" height="54" patternUnits="userSpaceOnUse">
+      <path d="M0 27L31 0L62 27L31 54Z" fill="none" stroke="#7769C6" stroke-width="4" opacity=".9"/>
+      <circle cx="31" cy="0" r="4" fill="#574AA8"/><circle cx="0" cy="27" r="4" fill="#574AA8"/><circle cx="62" cy="27" r="4" fill="#574AA8"/><circle cx="31" cy="54" r="4" fill="#574AA8"/>
+    </pattern>
+    <marker id="blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#2D7FC1"/></marker>
+    <marker id="red" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#C64E4E"/></marker>
+    <marker id="gray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#5D6973"/></marker>
+    <style><![CDATA[
+      text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#24323A}
+      .title{font-size:38px;font-weight:600}.subtitle{font-size:20px;fill:#52616B}.pt{font-size:25px;font-weight:600}.label{font-size:18px}.small{font-size:15px;fill:#4D5B64}
+      .panel{fill:#F9F8FD;stroke:#CCC7E7;stroke-width:2}.solvent{fill:#DCEEFE}.gel{fill:url(#mesh)}.wall{fill:#818A91}
+      .evap{stroke:#2D7FC1;stroke-width:4;marker-end:url(#blue)}.flow{stroke:#2D7FC1;stroke-width:3;stroke-dasharray:7 5;marker-end:url(#blue)}
+      .stress{stroke:#C64E4E;stroke-width:4;marker-end:url(#red)}.next{stroke:#5D6973;stroke-width:4;marker-end:url(#gray)}
+    ]]></style>
+  </defs>
+  <rect width="1600" height="860" fill="#FFFFFF"/>
+  <text x="70" y="65" class="title">凝胶：Darcy–Biot 孔弹性、空化与断裂竞争</text>
+  <text x="70" y="100" class="subtitle">孔压梯度既可驱动宏观应力，裂尖附近溶剂流动也可提供耗散</text>
+
+  <rect x="70" y="150" width="430" height="540" rx="18" class="panel"/>
+  <rect x="585" y="150" width="430" height="540" rx="18" class="panel"/>
+  <rect x="1100" y="150" width="430" height="540" rx="18" class="panel"/>
+  <path d="M500 420H575" class="next"/><path d="M1015 420H1090" class="next"/>
+
+  <text x="100" y="198" class="pt">① 饱和连续网络</text>
+  <text x="100" y="228" class="small">溶剂充满网络，骨架可变形且可透流</text>
+  <rect x="130" y="310" width="310" height="270" rx="14" class="solvent"/>
+  <rect x="130" y="310" width="310" height="270" rx="14" class="gel"/>
+  <line x1="190" y1="295" x2="190" y2="245" class="evap"/><line x1="285" y1="295" x2="285" y2="230" class="evap"/><line x1="380" y1="295" x2="380" y2="245" class="evap"/>
+  <text x="145" y="620" class="label">状态量：网络变形 + 溶剂压力</text>
+  <text x="150" y="652" class="small">线性孔弹性只是起点，大收缩需有限变形</text>
+
+  <text x="615" y="198" class="pt">② 脱溶剂与压力扩散</text>
+  <text x="615" y="228" class="small">表面收缩快于内部，负液压与应力梯度建立</text>
+  <rect x="645" y="330" width="310" height="250" rx="14" class="solvent"/>
+  <rect x="645" y="330" width="310" height="250" rx="14" class="gel"/>
+  <rect x="645" y="330" width="310" height="48" fill="#7769C6" opacity=".28"/>
+  <line x1="705" y1="315" x2="705" y2="250" class="evap"/><line x1="800" y1="315" x2="800" y2="235" class="evap"/><line x1="895" y1="315" x2="895" y2="250" class="evap"/>
+  <path d="M705 540C720 480 730 415 745 365" class="flow"/><path d="M835 540C845 480 855 420 870 365" class="flow"/>
+  <line x1="675" y1="600" x2="615" y2="600" class="stress"/><line x1="925" y1="600" x2="985" y2="600" class="stress"/>
+  <text x="674" y="635" class="label">tₕ ∼ H² / Dₕ</text>
+  <text x="810" y="635" class="small">k、K 和溶剂黏度决定 Dₕ</text>
+
+  <text x="1130" y="198" class="pt">③ 三条竞争路径</text>
+  <text x="1130" y="228" class="small">成核、稳定增长和裂纹传播是不同条件</text>
+  <rect x="1160" y="315" width="310" height="275" rx="14" class="solvent"/>
+  <rect x="1160" y="315" width="310" height="275" rx="14" class="gel"/>
+  <path d="M1160 382 C1220 350 1280 410 1340 370 C1390 340 1425 375 1470 350 L1470 315 L1160 315 Z" fill="#F4F8FA" opacity=".94"/>
+  <ellipse cx="1280" cy="480" rx="44" ry="34" fill="#FFFFFF" stroke="#C64E4E" stroke-width="5"/>
+  <path d="M1390 315 L1380 375 L1400 420 L1382 480 L1392 545" fill="none" stroke="#C64E4E" stroke-width="10" stroke-linejoin="round"/>
+  <line x1="1200" y1="285" x2="1200" y2="340" class="flow"/><text x="1160" y="270" class="small">表面侵气</text>
+  <line x1="1240" y1="535" x2="1260" y2="510" class="stress"/><text x="1165" y="565" class="small">异质空化</text>
+  <line x1="1450" y1="560" x2="1405" y2="520" class="stress"/><text x="1380" y="610" class="small">内聚断裂</text>
+  <text x="1135" y="650" class="label">空洞可是独立失效，也可成为裂纹应力集中源</text>
+
+  <rect x="70" y="735" width="1460" height="78" rx="14" fill="#F2F0FA"/>
+  <text x="95" y="770" class="label">对极片有价值的迁移：液压扩散—骨架变形—黏弹松弛—空化/断裂的竞争。</text>
+  <text x="95" y="800" class="label">不可直接迁移：成熟凝胶网络的模量、渗透率与理想均相空化阈值。</text>
+</svg>

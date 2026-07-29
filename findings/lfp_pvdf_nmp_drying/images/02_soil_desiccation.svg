@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="860" viewBox="0 0 1600 860" role="img" aria-labelledby="title desc">
+  <title id="title">岩土多孔介质的脱水收缩与干缩裂纹</title>
+  <desc id="desc">展示土层从饱和、自由收缩、开始脱饱和到在底部约束下形成表面和地下裂纹的过程。</desc>
+  <defs>
+    <pattern id="soil" width="44" height="38" patternUnits="userSpaceOnUse">
+      <rect width="44" height="38" fill="#CFA77E"/><circle cx="10" cy="12" r="7" fill="#A9794F"/><circle cx="32" cy="26" r="9" fill="#B8895E"/><circle cx="38" cy="6" r="4" fill="#8F643E"/>
+    </pattern>
+    <marker id="blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#2D7FC1"/></marker>
+    <marker id="red" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#C64E4E"/></marker>
+    <marker id="gray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#5D6973"/></marker>
+    <style><![CDATA[
+      text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#24323A}
+      .title{font-size:38px;font-weight:600}.subtitle{font-size:20px;fill:#52616B}.pt{font-size:25px;font-weight:600}.label{font-size:18px}.small{font-size:15px;fill:#4D5B64}
+      .panel{fill:#FBF9F6;stroke:#D8CABB;stroke-width:2}.water{fill:#7FC3EE;fill-opacity:.65}.base{fill:#7F8589}.evap{stroke:#2D7FC1;stroke-width:4;marker-end:url(#blue)}
+      .shrink{stroke:#C64E4E;stroke-width:4;marker-end:url(#red)}.flow{stroke:#2D7FC1;stroke-width:3;stroke-dasharray:7 5;marker-end:url(#blue)}
+      .next{stroke:#5D6973;stroke-width:4;marker-end:url(#gray)}
+    ]]></style>
+  </defs>
+  <rect width="1600" height="860" fill="#FFFFFF"/>
+  <text x="70" y="65" class="title">岩土：非饱和输运—自由收缩—边界约束—断裂</text>
+  <text x="70" y="100" class="subtitle">可迁移的是水力–力学骨架，不是土体参数或临界含水率</text>
+
+  <rect x="55" y="145" width="350" height="570" rx="18" class="panel"/>
+  <rect x="435" y="145" width="350" height="570" rx="18" class="panel"/>
+  <rect x="815" y="145" width="350" height="570" rx="18" class="panel"/>
+  <rect x="1195" y="145" width="350" height="570" rx="18" class="panel"/>
+  <path d="M405 430H430" class="next"/><path d="M785 430H810" class="next"/><path d="M1165 430H1190" class="next"/>
+
+  <text x="80" y="190" class="pt">① 近饱和土层</text>
+  <rect x="85" y="310" width="290" height="285" fill="url(#soil)"/>
+  <rect x="85" y="310" width="290" height="285" class="water"/>
+  <rect x="75" y="595" width="310" height="28" rx="3" class="base"/>
+  <line x1="145" y1="295" x2="145" y2="235" class="evap"/><line x1="230" y1="295" x2="230" y2="220" class="evap"/><line x1="315" y1="295" x2="315" y2="235" class="evap"/>
+  <text x="96" y="270" class="small">表面蒸发</text><text x="105" y="665" class="label">液体损失先由体积收缩消化</text>
+
+  <text x="460" y="190" class="pt">② 自由收缩</text>
+  <rect x="500" y="360" width="220" height="235" fill="url(#soil)"/>
+  <rect x="500" y="360" width="220" height="235" class="water" opacity=".7"/>
+  <rect x="455" y="595" width="310" height="28" rx="3" class="base"/>
+  <line x1="475" y1="470" x2="510" y2="470" class="shrink"/><line x1="745" y1="470" x2="710" y2="470" class="shrink"/>
+  <line x1="610" y1="345" x2="610" y2="255" class="evap"/>
+  <text x="490" y="300" class="small">厚度与平面尺寸同时收缩</text>
+  <text x="505" y="665" class="label">自由收缩能力决定应力何时开始积累</text>
+
+  <text x="840" y="190" class="pt">③ 侵气/脱饱和</text>
+  <rect x="845" y="350" width="290" height="245" fill="url(#soil)"/>
+  <rect x="845" y="445" width="290" height="150" class="water" opacity=".62"/>
+  <path d="M845 445 C890 410 925 465 970 430 C1010 400 1060 455 1135 420 L1135 350 L845 350 Z" fill="#F4F8FA" opacity=".9"/>
+  <rect x="835" y="595" width="310" height="28" rx="3" class="base"/>
+  <line x1="910" y1="540" x2="910" y2="420" class="flow"/><line x1="1030" y1="560" x2="1030" y2="430" class="flow"/>
+  <text x="865" y="310" class="small">气相进入大孔，吸力和导水率快速变化</text>
+  <text x="860" y="665" class="label">保水曲线 + 饱和度相关渗透率</text>
+
+  <text x="1220" y="190" class="pt">④ 约束收缩与裂纹</text>
+  <rect x="1225" y="350" width="290" height="245" fill="url(#soil)"/>
+  <rect x="1215" y="595" width="310" height="28" rx="3" class="base"/>
+  <path d="M1305 350 L1294 410 L1310 455 L1288 510 L1298 595" fill="none" stroke="#7A322E" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M1455 595 L1448 540 L1425 510" fill="none" stroke="#7A322E" stroke-width="9" stroke-linejoin="round"/>
+  <line x1="1290" y1="635" x2="1235" y2="635" class="shrink"/><line x1="1450" y1="635" x2="1505" y2="635" class="shrink"/>
+  <line x1="1290" y1="670" x2="1345" y2="670" class="shrink"/><line x1="1450" y1="670" x2="1395" y2="670" class="shrink"/>
+  <text x="1228" y="310" class="small">表面裂纹 + 地下裂纹</text>
+  <text x="1240" y="705" class="label">厚度 × 底部摩擦/黏附联合控制</text>
+
+  <rect x="70" y="755" width="1460" height="70" rx="14" fill="#F4F0EB"/>
+  <text x="95" y="798" class="label">对极片有价值的迁移：饱和→脱饱和状态切换、液压均化时间约随 H² 增长、厚度与基底约束必须联合辨识。不可迁移：土体保水参数、时间/尺度及黏土本构。</text>
+</svg>

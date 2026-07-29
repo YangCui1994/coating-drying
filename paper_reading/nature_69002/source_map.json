@@ -1,0 +1,107 @@
+{
+  "paper": {
+    "title": "Chemical staining for fundamental studies and optimization of binders in Li-ion battery negative electrodes",
+    "doi": "10.1038/s41467-026-69002-1",
+    "venue": "Nature Communications",
+    "year": 2026,
+    "source_path": "source.pdf",
+    "source_pages": 16,
+    "reading_artifact": "reading_companion.md"
+  },
+  "figures": [
+    {
+      "id": "F001",
+      "figure": "Fig. 1",
+      "pdf_page": 3,
+      "asset": "assets/figures/fig1.png",
+      "topic": "staining mechanism and selectivity",
+      "support": "strong_with_cross_reactivity_caveat"
+    },
+    {
+      "id": "F002",
+      "figure": "Fig. 2",
+      "pdf_page": 4,
+      "asset": "assets/figures/fig2.png",
+      "topic": "quantitative sensitivity in a model bilayer electrode",
+      "support": "strong"
+    },
+    {
+      "id": "F003",
+      "figure": "Fig. 3",
+      "pdf_page": 6,
+      "asset": "assets/figures/fig3.png",
+      "topic": "local binder morphologies and inferred CMC nanolayer thickness",
+      "support": "moderate_to_strong_for_morphology_partial_for_thickness"
+    },
+    {
+      "id": "F004",
+      "figure": "Fig. 4",
+      "pdf_page": 7,
+      "asset": "assets/figures/fig4.png",
+      "topic": "binder surface coverage before and after calendering",
+      "support": "moderate_to_strong"
+    },
+    {
+      "id": "F005",
+      "figure": "Fig. 5",
+      "pdf_page": 8,
+      "asset": "assets/figures/fig5.png",
+      "topic": "initial CMC concentration, CBD agglomeration and electronic resistivity",
+      "support": "moderate_to_strong_for_process_effect_partial_for_mechanism"
+    },
+    {
+      "id": "F006",
+      "figure": "Fig. 6",
+      "pdf_page": 9,
+      "asset": "assets/figures/fig6.png",
+      "topic": "phase inversion, binder gradients and pore ionic resistance",
+      "support": "moderate"
+    },
+    {
+      "id": "F007",
+      "figure": "Fig. 7",
+      "pdf_page": 11,
+      "asset": "assets/figures/fig7.png",
+      "topic": "material compatibility and failure cases",
+      "support": "strong"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C001",
+      "claim": "Ag and Br can be calibrated as markers for CMC and SBR in graphite electrodes",
+      "evidence": ["F001", "F002"],
+      "boundary": "cross-reactions and formulation-specific calibration remain necessary"
+    },
+    {
+      "id": "C002",
+      "claim": "three local binder morphology regimes can be separated by multi-voltage EsB",
+      "evidence": ["F003"],
+      "boundary": "the 10-15 nm thickness is model-inferred rather than a full-electrode direct measurement"
+    },
+    {
+      "id": "C003",
+      "claim": "calendering substantially reduces apparent CMC surface coverage",
+      "evidence": ["F004"],
+      "boundary": "direct electrochemical consequences were not tested in matched full cells"
+    },
+    {
+      "id": "C004",
+      "claim": "higher initial CMC concentration reduces large CBD agglomerates and electronic resistivity",
+      "evidence": ["F005"],
+      "boundary": "the proposed adsorption-saturation mechanism was not measured directly"
+    },
+    {
+      "id": "C005",
+      "claim": "acetone phase inversion changes binder distribution and lowers apparent pore ionic resistance",
+      "evidence": ["F006"],
+      "boundary": "full-cell performance, long-term stability and roll-to-roll scale-up remain unverified"
+    },
+    {
+      "id": "C006",
+      "claim": "the staining approach is incompatible with reactive nano-Si and LiFePO4 without further adaptation",
+      "evidence": ["F007"],
+      "boundary": "compatibility depends on particle surface chemistry and passivation"
+    }
+  ]
+}

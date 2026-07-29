@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1160" viewBox="0 0 1800 1160" role="img" aria-labelledby="title desc">
+  <title id="title">LFP 厚极片开裂类缺陷的竞争形成路径与判别证据</title>
+  <desc id="desc">从实际膜温和蒸发通量历史，经迁移锁定与孔隙排液受限收缩，分叉到流动期表面起伏、结皮后鼓泡、表面通道裂纹、层内裂纹、预存气泡或空化以及界面脱粘。每个终点列出最早时刻、形貌线索和最强反证。</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#1f2937" flood-opacity="0.13"/>
+    </filter>
+    <style>
+      .cn { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .title { font-size: 41px; font-weight: 700; fill: #152536; }
+      .subtitle { font-size: 20px; fill: #526575; }
+      .boxTitle { font-size: 25px; font-weight: 700; fill: #1c3040; }
+      .body { font-size: 18px; fill: #3c4d5a; }
+      .small { font-size: 16px; fill: #526575; }
+      .badge { font-size: 15px; font-weight: 700; }
+      .direct { stroke: #405866; stroke-width: 4; fill: none; }
+      .transfer { stroke: #7d6aa8; stroke-width: 4; stroke-dasharray: 12 8; fill: none; }
+      .unverified { stroke: #d37a28; stroke-width: 4; stroke-dasharray: 3 8; stroke-linecap: round; fill: none; }
+      .feedback { stroke: #d94841; stroke-width: 3; stroke-dasharray: 7 6; fill: none; }
+    </style>
+  </defs>
+  <rect width="1800" height="1160" fill="#f7fafc"/>
+  <text x="90" y="70" class="cn title">同一个“开裂类缺陷”，可能来自六条不互斥路径</text>
+  <text x="90" y="106" class="cn subtitle">最终二维截面只给形貌线索；判别必须结合入炉基线、形成时刻、三维连通性/裂尖和正交干预响应</text>
+
+  <!-- common trunk -->
+  <g filter="url(#shadow)" class="cn">
+    <rect x="95" y="155" width="430" height="115" rx="18" fill="#dceef9" stroke="#3f8fc2" stroke-width="2"/>
+    <text x="310" y="194" text-anchor="middle" class="boxTitle">实际热质边界</text>
+    <text x="310" y="228" text-anchor="middle" class="body">Tₛ(t,y)、J(t,y)、气相 NMP</text>
+    <text x="310" y="253" text-anchor="middle" class="small">不是炉温/线速本身</text>
+
+    <rect x="685" y="155" width="430" height="115" rx="18" fill="#e9f3e6" stroke="#5e9155" stroke-width="2"/>
+    <text x="900" y="194" text-anchor="middle" class="boxTitle">迁移与机械锁定</text>
+    <text x="900" y="228" text-anchor="middle" class="body">组分梯度、E1/E2、E′、τᵣ、k</text>
+    <text x="900" y="253" text-anchor="middle" class="small">富集不自动等于 Skin+</text>
+
+    <rect x="1275" y="155" width="430" height="115" rx="18" fill="#f1ebf7" stroke="#7d6aa8" stroke-width="2"/>
+    <text x="1490" y="194" text-anchor="middle" class="boxTitle">排液、侵气与受限收缩</text>
+    <text x="1490" y="228" text-anchor="middle" class="body">Sₗ、pₗ、液路连通、σ∥、缺陷</text>
+    <text x="1490" y="253" text-anchor="middle" class="small">E3/E4 与 E5 可重叠</text>
+  </g>
+  <line x1="525" y1="212" x2="685" y2="212" class="direct"/>
+  <polygon points="685,212 662,199 662,225" fill="#405866"/>
+  <line x1="1115" y1="212" x2="1275" y2="212" class="direct"/>
+  <polygon points="1275,212 1252,199 1252,225" fill="#405866"/>
+
+  <!-- branch rail -->
+  <line x1="900" y1="270" x2="900" y2="330" class="direct"/>
+  <line x1="185" y1="330" x2="1615" y2="330" class="direct"/>
+
+  <!-- cards top row -->
+  <g filter="url(#shadow)" class="cn">
+    <rect x="70" y="390" width="390" height="255" rx="18" fill="#fff7ed" stroke="#d37a28" stroke-width="2"/>
+    <rect x="500" y="390" width="390" height="255" rx="18" fill="#fff7ed" stroke="#d37a28" stroke-width="2"/>
+    <rect x="930" y="390" width="390" height="255" rx="18" fill="#fff1f1" stroke="#d94841" stroke-width="2"/>
+    <rect x="1360" y="390" width="390" height="255" rx="18" fill="#fff1f1" stroke="#d94841" stroke-width="2"/>
+  </g>
+
+  <!-- connectors top row -->
+  <path d="M185 330 L185 390" class="unverified"/>
+  <path d="M615 330 L615 390" class="transfer"/>
+  <path d="M1045 330 L1045 390" class="direct"/>
+  <path d="M1475 330 L1475 390" class="unverified"/>
+
+  <!-- D5 early -->
+  <g class="cn">
+    <text x="95" y="430" class="boxTitle">D5a 流动期表面起伏</text>
+    <rect x="95" y="447" width="118" height="25" rx="12" fill="#ffe0b8"/>
+    <text x="154" y="465" text-anchor="middle" class="badge" fill="#a95911">LFP 未证实</text>
+    <text x="95" y="500" class="body">最早：E0→E1，材料仍可流动</text>
+    <text x="95" y="532" class="body">线索：方向性波纹、无裂尖、可流平</text>
+    <text x="95" y="564" class="body">候选：表面张力/横向流动不稳定</text>
+    <text x="95" y="602" class="body" font-weight="650">最强反证</text>
+    <text x="95" y="628" class="small">起伏只在全层锁定后出现，且与气泡/屈曲同步</text>
+  </g>
+
+  <!-- skin -->
+  <g class="cn">
+    <text x="525" y="430" class="boxTitle">D3/D5：Skin+ 后鼓泡/塌陷</text>
+    <rect x="525" y="447" width="136" height="25" rx="12" fill="#e8ddf5"/>
+    <text x="593" y="465" text-anchor="middle" class="badge" fill="#664d8c">跨域假设</text>
+    <text x="525" y="500" class="body">最早：测到表层低渗/高模量以后</text>
+    <text x="525" y="532" class="body">线索：圆钝鼓包、泄压后凹陷、表面完整</text>
+    <text x="525" y="564" class="body">必要：表层 k/E/屈服持续区别于内部</text>
+    <text x="525" y="602" class="body" font-weight="650">最强反证</text>
+    <text x="525" y="628" class="small">没有表层状态跃迁；空腔入炉前已存在</text>
+  </g>
+
+  <!-- D1 -->
+  <g class="cn">
+    <text x="955" y="430" class="boxTitle">D1 表面通道/泥裂</text>
+    <rect x="955" y="447" width="138" height="25" rx="12" fill="#ffd6d4"/>
+    <text x="1024" y="465" text-anchor="middle" class="badge" fill="#a62d2a">电极直接证据</text>
+    <text x="955" y="500" class="body">最早：承载网络有足够拉伸能以后</text>
+    <text x="955" y="532" class="body">线索：表面开口、向下裂尖、面状连通</text>
+    <text x="955" y="564" class="body">判据：Gch=Cσ²H/E′ ≥ Γc</text>
+    <text x="955" y="602" class="body" font-weight="650">最强反证</text>
+    <text x="955" y="628" class="small">“裂纹”随制样消失或无不可逆增长/裂尖</text>
+  </g>
+
+  <!-- D2 -->
+  <g class="cn">
+    <text x="1385" y="430" class="boxTitle">D2 真正的层内内聚裂纹</text>
+    <rect x="1385" y="447" width="118" height="25" rx="12" fill="#ffe0b8"/>
+    <text x="1444" y="465" text-anchor="middle" class="badge" fill="#a95911">LFP 未证实</text>
+    <text x="1385" y="500" class="body">最早：中层弱带+拉伸能建立以后</text>
+    <text x="1385" y="532" class="body">线索：尖锐裂尖、片状三维连通、非圆钝</text>
+    <text x="1385" y="564" class="body">候选：PVDF/模量弱层、局部 G&gt;Γc</text>
+    <text x="1385" y="602" class="body" font-weight="650">最强反证</text>
+    <text x="1385" y="628" class="small">原位看到圆形气泡膨胀；无裂尖且强响应脱气</text>
+  </g>
+
+  <!-- second row cards -->
+  <g filter="url(#shadow)" class="cn">
+    <rect x="180" y="715" width="440" height="260" rx="18" fill="#eef7fc" stroke="#3f8fc2" stroke-width="2"/>
+    <rect x="680" y="715" width="440" height="260" rx="18" fill="#f5f0fa" stroke="#7d6aa8" stroke-width="2"/>
+    <rect x="1180" y="715" width="440" height="260" rx="18" fill="#fff1f1" stroke="#d94841" stroke-width="2"/>
+  </g>
+  <path d="M400 645 L400 715" class="direct"/>
+  <path d="M900 645 L900 715" class="transfer"/>
+  <path d="M1400 645 L1400 715" class="direct"/>
+
+  <!-- pre-existing bubble -->
+  <g class="cn">
+    <text x="205" y="757" class="boxTitle">D3a 预存气泡/析气/蒸气泡</text>
+    <rect x="205" y="775" width="138" height="25" rx="12" fill="#cfeafa"/>
+    <text x="274" y="793" text-anchor="middle" class="badge" fill="#226a94">电极直接证据</text>
+    <text x="205" y="830" class="body">最早：可在 E0 前已有；随后增长</text>
+    <text x="205" y="862" class="body">线索：圆钝空腔、鼓包、可诱发 D1</text>
+    <text x="205" y="894" class="body">判别：入炉基线+可控脱气/种泡</text>
+    <text x="205" y="934" class="body" font-weight="650">最强反证</text>
+    <text x="205" y="960" class="small">干燥前无空腔且新生时刻与负液压/裂尖一致</text>
+  </g>
+
+  <!-- cavitation -->
+  <g class="cn">
+    <text x="705" y="757" class="boxTitle">D3b 负液压异质空化</text>
+    <rect x="705" y="775" width="136" height="25" rx="12" fill="#e8ddf5"/>
+    <text x="773" y="793" text-anchor="middle" class="badge" fill="#664d8c">跨域假设</text>
+    <text x="705" y="830" class="body">最早：承载后液体张力达到缺陷阈值</text>
+    <text x="705" y="862" class="body">线索：内部新生腔体，可进一步连到裂纹</text>
+    <text x="705" y="894" class="body">必要：排除夹气，并证明张力时序可行</text>
+    <text x="705" y="934" class="body" font-weight="650">最强反证</text>
+    <text x="705" y="960" class="small">同位置气泡入炉前已存在或腔体由表面进气形成</text>
+  </g>
+
+  <!-- delamination -->
+  <g class="cn">
+    <text x="1205" y="757" class="boxTitle">D4 界面脱粘</text>
+    <rect x="1205" y="775" width="138" height="25" rx="12" fill="#ffd6d4"/>
+    <text x="1274" y="793" text-anchor="middle" class="badge" fill="#a62d2a">电极直接证据</text>
+    <text x="1205" y="830" class="body">最早：界面能量释放超过 Γint</text>
+    <text x="1205" y="862" class="body">线索：箔–涂层分离；可从 D1 触底处启动</text>
+    <text x="1205" y="894" class="body">另一路：箔侧贫粘结剂/污染独立触发</text>
+    <text x="1205" y="934" class="body" font-weight="650">最强反证</text>
+    <text x="1205" y="960" class="small">无界面分离；裂面完全位于涂层内部</text>
+  </g>
+
+  <!-- couplings and feedback -->
+  <path d="M620 845 C650 845 660 845 680 845" class="feedback"/>
+  <polygon points="680,845 661,834 661,856" fill="#d94841"/>
+  <text x="650" y="829" text-anchor="middle" class="cn small" fill="#b52f2b">气核降低空化门槛</text>
+  <path d="M620 800 C820 660 930 660 1045 645" class="feedback"/>
+  <polygon points="1045,645 1026,636 1029,657" fill="#d94841"/>
+  <text x="805" y="682" class="cn small" fill="#b52f2b">气泡可诱发 D1</text>
+  <path d="M1120 830 C1160 830 1170 830 1180 830" class="feedback"/>
+  <polygon points="1180,830 1161,819 1161,841" fill="#d94841"/>
+  <text x="1150" y="814" text-anchor="middle" class="cn small" fill="#b52f2b">腔体–裂纹耦合</text>
+  <path d="M1125 645 C1240 665 1320 690 1400 715" class="feedback"/>
+  <polygon points="1400,715 1379,711 1386,692" fill="#d94841"/>
+  <text x="1250" y="680" class="cn small" fill="#b52f2b">D1 触底可诱发 D4</text>
+  <path d="M1400 975 C1370 1045 1050 1050 910 1012" class="feedback"/>
+  <polygon points="910,1012 932,1007 926,1028" fill="#d94841"/>
+  <text x="1100" y="1060" class="cn small" fill="#b52f2b">裂纹/空腔会反过来改变排气、渗流和应力</text>
+
+  <!-- observation callout -->
+  <rect x="95" y="1015" width="660" height="95" rx="16" fill="#fff8d8" stroke="#d2a61d" stroke-width="2"/>
+  <text x="125" y="1052" class="cn boxTitle" font-size="22">“表面完整 + 中层空洞”不是机制名称</text>
+  <text x="125" y="1084" class="cn body">先并列 D2、D3a、D3b、困液宏孔和制样伪影，再用时序与干预淘汰。</text>
+
+  <!-- legend -->
+  <g transform="translate(970,1095)" class="cn">
+    <line x1="0" y1="0" x2="70" y2="0" class="direct"/><text x="82" y="6" class="small">电极直接证据路径</text>
+    <line x1="275" y1="0" x2="345" y2="0" class="transfer"/><text x="357" y="6" class="small">跨领域候选</text>
+    <line x1="535" y1="0" x2="605" y2="0" class="unverified"/><text x="617" y="6" class="small">目标 LFP 未证实</text>
+  </g>
+</svg>

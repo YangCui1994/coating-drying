@@ -1,0 +1,10 @@
+{
+  "coarse_peak_stress_mpa": 1.0892972064487882,
+  "fine_peak_stress_mpa": 1.0888549432234584,
+  "peak_stress_relative_difference": 0.00040617276716449117,
+  "coarse_peak_risk": 1.2242426948896947,
+  "fine_peak_risk": 1.2129230738959182,
+  "peak_risk_relative_difference": 0.009332513526532043,
+  "coarse_mass_balance_error": 1.1858461261560205e-15,
+  "fine_mass_balance_error": 8.131516293641283e-15
+}

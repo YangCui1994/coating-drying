@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">陶瓷流延层的干燥应力、聚合物松弛和临界开裂厚度</title>
+  <desc id="desc">上半部展示高固含陶瓷颗粒涂层从流延、颗粒锁定到聚合物松弛和裂纹的过程，下半部展示质量损失与干燥应力的同步轨迹。</desc>
+  <defs>
+    <marker id="blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#2D7FC1"/></marker>
+    <marker id="red" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#C64E4E"/></marker>
+    <marker id="gray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#5D6973"/></marker>
+    <style><![CDATA[
+      text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#24323A}
+      .title{font-size:38px;font-weight:600}.subtitle{font-size:20px;fill:#52616B}.pt{font-size:24px;font-weight:600}.label{font-size:18px}.small{font-size:15px;fill:#4D5B64}
+      .panel{fill:#FBFAF7;stroke:#D9D0C1;stroke-width:2}.liquid{fill:#DDEFFD}.particle{fill:#D2C6AE;stroke:#877861;stroke-width:2}.binder{fill:none;stroke:#D98B3A;stroke-width:4;stroke-linecap:round}.base{fill:#8D979E}
+      .evap{stroke:#2D7FC1;stroke-width:4;marker-end:url(#blue)}.stress{stroke:#C64E4E;stroke-width:4;marker-end:url(#red)}.next{stroke:#5D6973;stroke-width:4;marker-end:url(#gray)}
+      .mass{fill:none;stroke:#2D7FC1;stroke-width:5}.curve{fill:none;stroke:#C64E4E;stroke-width:5}.grid{stroke:#D6DEE3;stroke-width:1}
+    ]]></style>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <text x="70" y="65" class="title">陶瓷流延：颗粒网络主导应力峰，聚合物主导松弛与断裂抵抗</text>
+  <text x="70" y="100" class="subtitle">与极片最接近的方法类比：高固含无机颗粒 + 聚合物 + 溶剂 + 刚性基底</text>
+
+  <rect x="55" y="140" width="350" height="390" rx="18" class="panel"/>
+  <rect x="435" y="140" width="350" height="390" rx="18" class="panel"/>
+  <rect x="815" y="140" width="350" height="390" rx="18" class="panel"/>
+  <rect x="1195" y="140" width="350" height="390" rx="18" class="panel"/>
+  <path d="M405 335H430" class="next"/><path d="M785 335H810" class="next"/><path d="M1165 335H1190" class="next"/>
+
+  <text x="78" y="182" class="pt">① 高固含流延层</text>
+  <rect x="85" y="270" width="290" height="170" rx="8" class="liquid"/><rect x="78" y="440" width="304" height="24" class="base"/>
+  <circle cx="130" cy="325" r="32" class="particle"/><circle cx="210" cy="310" r="37" class="particle"/><circle cx="305" cy="330" r="35" class="particle"/>
+  <circle cx="165" cy="395" r="36" class="particle"/><circle cx="255" cy="395" r="40" class="particle"/><circle cx="340" cy="400" r="28" class="particle"/>
+  <path d="M110 370C145 345 170 380 205 355" class="binder"/><path d="M245 350C275 325 300 360 342 340" class="binder"/>
+  <line x1="145" y1="255" x2="145" y2="215" class="evap"/><line x1="275" y1="255" x2="275" y2="200" class="evap"/>
+  <text x="92" y="495" class="small">颗粒、黏结剂/增塑状态与溶剂共同定义湿态本构</text>
+
+  <text x="458" y="182" class="pt">② 颗粒锁定/毛细加载</text>
+  <rect x="465" y="295" width="290" height="145" rx="8" fill="#EAF2F6"/><rect x="458" y="440" width="304" height="24" class="base"/>
+  <circle cx="505" cy="335" r="34" class="particle"/><circle cx="575" cy="335" r="34" class="particle"/><circle cx="645" cy="335" r="34" class="particle"/><circle cx="715" cy="335" r="34" class="particle"/>
+  <circle cx="540" cy="395" r="34" class="particle"/><circle cx="610" cy="395" r="34" class="particle"/><circle cx="680" cy="395" r="34" class="particle"/>
+  <line x1="540" y1="280" x2="540" y2="210" class="evap"/><line x1="675" y1="280" x2="675" y2="210" class="evap"/>
+  <line x1="540" y1="480" x2="470" y2="480" class="stress"/><line x1="675" y1="480" x2="745" y2="480" class="stress"/>
+  <text x="480" y="515" class="small">颗粒/孔喉网络决定早期峰值加载</text>
+
+  <text x="838" y="182" class="pt">③ 黏弹松弛/固定</text>
+  <rect x="845" y="315" width="290" height="125" rx="8" fill="#EEF1F2"/><rect x="838" y="440" width="304" height="24" class="base"/>
+  <circle cx="885" cy="350" r="34" class="particle"/><circle cx="955" cy="350" r="34" class="particle"/><circle cx="1025" cy="350" r="34" class="particle"/><circle cx="1095" cy="350" r="34" class="particle"/>
+  <circle cx="920" cy="410" r="34" class="particle"/><circle cx="990" cy="410" r="34" class="particle"/><circle cx="1060" cy="410" r="34" class="particle"/>
+  <path d="M860 385C900 355 935 400 970 370" class="binder"/><path d="M1000 382C1035 350 1070 395 1120 365" class="binder"/>
+  <line x1="920" y1="480" x2="875" y2="480" class="stress" opacity=".5"/><line x1="1055" y1="480" x2="1100" y2="480" class="stress" opacity=".5"/>
+  <text x="850" y="515" class="small">聚合物状态决定松弛时间、残余应力和韧性</text>
+
+  <text x="1218" y="182" class="pt">④ 超过 CCT 后开裂</text>
+  <rect x="1225" y="315" width="290" height="125" rx="8" fill="#EEF1F2"/><rect x="1218" y="440" width="304" height="24" class="base"/>
+  <circle cx="1265" cy="350" r="34" class="particle"/><circle cx="1335" cy="350" r="34" class="particle"/><circle cx="1405" cy="350" r="34" class="particle"/><circle cx="1475" cy="350" r="34" class="particle"/>
+  <circle cx="1300" cy="410" r="34" class="particle"/><circle cx="1370" cy="410" r="34" class="particle"/><circle cx="1440" cy="410" r="34" class="particle"/>
+  <path d="M1375 315L1360 355L1380 390L1365 440" fill="none" stroke="#C64E4E" stroke-width="10"/>
+  <line x1="1320" y1="480" x2="1240" y2="480" class="stress"/><line x1="1420" y1="480" x2="1500" y2="480" class="stress"/>
+  <text x="1228" y="515" class="small">裂后应力突降不能被误判为纯材料松弛</text>
+
+  <rect x="70" y="570" width="1460" height="275" rx="18" fill="#F7FAFC" stroke="#D2DCE2" stroke-width="2"/>
+  <text x="95" y="610" class="pt">同步测量才能确定事件顺序</text>
+  <line x1="150" y1="790" x2="1450" y2="790" stroke="#75828B" stroke-width="2"/>
+  <line x1="150" y1="650" x2="150" y2="790" stroke="#75828B" stroke-width="2"/>
+  <line x1="150" y1="720" x2="1450" y2="720" class="grid"/>
+  <path d="M160 665 C400 680 650 710 880 745 C1080 770 1280 780 1440 782" class="mass"/>
+  <path d="M160 780 C360 770 520 710 690 665 C820 630 940 675 1050 720 C1130 750 1180 705 1230 755 C1320 780 1390 782 1440 782" class="curve"/>
+  <line x1="690" y1="640" x2="690" y2="790" stroke="#AEB8BE" stroke-dasharray="6 5"/><line x1="1150" y1="640" x2="1150" y2="790" stroke="#AEB8BE" stroke-dasharray="6 5"/>
+  <text x="620" y="635" class="small">应力峰/开始侵气</text><text x="1090" y="635" class="small">裂纹导致快速释放</text>
+  <line x1="980" y1="670" x2="1040" y2="670" class="mass"/><text x="1055" y="677" class="label">残余溶剂/单位面积质量</text>
+  <line x1="980" y1="705" x2="1040" y2="705" class="curve"/><text x="1055" y="712" class="label">干燥应力</text>
+  <text x="160" y="820" class="small">时间 / 干燥进程 →</text>
+</svg>

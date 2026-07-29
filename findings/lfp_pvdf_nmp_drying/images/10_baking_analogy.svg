@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120" role="img" aria-labelledby="title desc">
+  <title id="title">面包、饼干、淀粉浆与 LFP 厚极片的干燥类比</title>
+  <desc id="desc">左侧分别展示面包外壳与内芯、饼干冷却时残余水分梯度造成延迟 checking、未糊化淀粉浆从液相输运转为蒸气输运。右侧展示 LFP 厚极片的锁定、侵气、液相断连和多路径失效。中间箭头标出可迁移问题，底部红色区域列出禁止迁移的参数和机制。</desc>
+  <defs>
+    <linearGradient id="breadCrust" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a85b23"/><stop offset="0.22" stop-color="#d78b42"/><stop offset="0.23" stop-color="#f2d6a2"/><stop offset="1" stop-color="#f7e7c2"/>
+    </linearGradient>
+    <linearGradient id="electrode" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dbe8e0"/><stop offset="1" stop-color="#8dbc83"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#1f2937" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .cn { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .title { font-size: 41px; font-weight: 700; fill: #152536; }
+      .subtitle { font-size: 20px; fill: #526575; }
+      .cardTitle { font-size: 27px; font-weight: 700; fill: #263746; }
+      .body { font-size: 19px; fill: #40515e; }
+      .small { font-size: 16px; fill: #526575; }
+      .mapping { font-size: 18px; font-weight: 650; fill: #2d556c; }
+      .particle { fill: #5e9c55; stroke: #366a35; stroke-width: 1.5; }
+      .bubble { fill: #fffaf0; stroke: #ba7b36; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1120" fill="#f7fafc"/>
+  <text x="80" y="70" class="cn title">烘焙类比的价值：迁移事件和问题，不迁移食品参数</text>
+  <text x="80" y="106" class="cn subtitle">面包教“外层定形≠内部稳定”，饼干教“出炉完整≠最终安全”，淀粉浆教“颗粒孔网会切换输运机制”</text>
+
+  <!-- column labels -->
+  <text x="330" y="155" text-anchor="middle" class="cn cardTitle">三个烘焙/食品物理镜头</text>
+  <text x="900" y="155" text-anchor="middle" class="cn cardTitle">只迁移可检验的问题</text>
+  <text x="1470" y="155" text-anchor="middle" class="cn cardTitle">LFP–PVDF/NMP 厚极片</text>
+
+  <!-- left cards -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="190" width="520" height="240" rx="20" fill="#fffaf1"/>
+    <rect x="70" y="460" width="520" height="240" rx="20" fill="#fffaf1"/>
+    <rect x="70" y="730" width="520" height="240" rx="20" fill="#fffaf1"/>
+  </g>
+
+  <!-- bread visual -->
+  <g class="cn">
+    <text x="100" y="230" class="cardTitle">① 面包：外壳与内芯同时演化</text>
+    <path d="M115 380 Q120 275 255 270 Q390 275 400 380 Z" fill="url(#breadCrust)" stroke="#9a5c2c" stroke-width="3"/>
+    <ellipse cx="180" cy="326" rx="22" ry="17" class="bubble"/>
+    <ellipse cx="250" cy="305" rx="29" ry="20" class="bubble"/>
+    <ellipse cx="325" cy="340" rx="25" ry="18" class="bubble"/>
+    <path d="M135 255 L135 220 M250 250 L250 215 M365 255 L365 220" stroke="#e5842f" stroke-width="3"/>
+    <polygon points="135,220 126,235 144,235" fill="#e5842f"/>
+    <polygon points="250,215 241,230 259,230" fill="#e5842f"/>
+    <polygon points="365,220 356,235 374,235" fill="#e5842f"/>
+    <text x="425" y="285" class="body">crust：低湿、高温、定形</text>
+    <text x="425" y="319" class="body">crumb：仍湿、仍软、气泡变化</text>
+    <text x="425" y="353" class="body">移动转变区可有有限宽度</text>
+    <text x="425" y="388" class="small">移动前沿是降阶模型，不一定是锐利界面</text>
+  </g>
+
+  <!-- biscuit visual -->
+  <g class="cn">
+    <text x="100" y="500" class="cardTitle">② 饼干：裂纹可以在冷却后才出现</text>
+    <ellipse cx="250" cy="590" rx="135" ry="66" fill="#d99b4d" stroke="#9c6025" stroke-width="3"/>
+    <ellipse cx="250" cy="590" rx="76" ry="37" fill="#efc77f" opacity="0.85"/>
+    <path d="M250 551 L242 573 L258 590 L245 612 L265 635" fill="none" stroke="#a82828" stroke-width="5"/>
+    <path d="M152 544 C180 518 220 514 250 519" fill="none" stroke="#56a5d2" stroke-width="4"/>
+    <polygon points="250,519 232,510 236,529" fill="#56a5d2"/>
+    <path d="M348 544 C320 518 280 514 250 519" fill="none" stroke="#56a5d2" stroke-width="4"/>
+    <text x="418" y="552" class="body">出炉：平均水分可相近，空间分布不同</text>
+    <text x="418" y="586" class="body">冷却：湿区/干区产生不相容应变</text>
+    <text x="418" y="620" class="body">结果：延迟 checking，不一定出口可见</text>
+    <text x="418" y="654" class="small">总含量不能替代梯度、模量和松弛历史</text>
+  </g>
+
+  <!-- starch visual -->
+  <g class="cn">
+    <text x="100" y="770" class="cardTitle">③ 未糊化淀粉浆：颗粒多孔桥梁</text>
+    <rect x="120" y="835" width="280" height="95" rx="8" fill="#7db9dc" stroke="#3e8cb7" stroke-width="2"/>
+    <g fill="#f1dcaa" stroke="#ad8d4c" stroke-width="1.5">
+      <circle cx="145" cy="858" r="18"/><circle cx="185" cy="872" r="20"/><circle cx="228" cy="852" r="18"/>
+      <circle cx="273" cy="872" r="20"/><circle cx="318" cy="854" r="18"/><circle cx="365" cy="872" r="20"/>
+      <circle cx="148" cy="910" r="20"/><circle cx="200" cy="912" r="18"/><circle cx="249" cy="908" r="20"/>
+      <circle cx="301" cy="910" r="18"/><circle cx="352" cy="908" r="20"/>
+    </g>
+    <path d="M158 820 L158 790 M255 820 L255 790 M350 820 L350 790" stroke="#2f7db6" stroke-width="3"/>
+    <polygon points="158,790 149,805 167,805" fill="#2f7db6"/>
+    <polygon points="255,790 246,805 264,805" fill="#2f7db6"/>
+    <polygon points="350,790 341,805 359,805" fill="#2f7db6"/>
+    <path d="M250 835 L242 864 L258 889 L246 930" fill="none" stroke="#a82828" stroke-width="5"/>
+    <text x="425" y="825" class="body">早期：粒间连续液相供给表面</text>
+    <text x="425" y="859" class="body">后期：液路断连，另一储库/蒸气控制</text>
+    <text x="425" y="893" class="body">毛细收缩、非线性骨架与裂纹耦合</text>
+    <text x="425" y="927" class="small">双孔隙只在目标结构证据支持时启用</text>
+  </g>
+
+  <!-- central mapping arrows -->
+  <g class="cn">
+    <path d="M610 305 C730 305 760 305 850 305" fill="none" stroke="#4c87a8" stroke-width="5"/>
+    <polygon points="850,305 827,292 827,318" fill="#4c87a8"/>
+    <rect x="675" y="251" width="355" height="86" rx="16" fill="#eaf4f9" stroke="#7fb0c9" stroke-width="2"/>
+    <text x="852" y="280" text-anchor="middle" class="mapping">问：表层何时先承载/降渗？</text>
+    <text x="852" y="309" text-anchor="middle" class="mapping">内层当时还在收缩、排液还是析气？</text>
+    <text x="852" y="330" text-anchor="middle" class="small">类比边界：面包以正压膨胀为重要驱动</text>
+
+    <path d="M610 575 C730 575 760 575 850 575" fill="none" stroke="#4c87a8" stroke-width="5"/>
+    <polygon points="850,575 827,562 827,588" fill="#4c87a8"/>
+    <rect x="675" y="521" width="355" height="86" rx="16" fill="#eaf4f9" stroke="#7fb0c9" stroke-width="2"/>
+    <text x="852" y="550" text-anchor="middle" class="mapping">问：平均残余 NMP 达标以后</text>
+    <text x="852" y="579" text-anchor="middle" class="mapping">厚向梯度和应力是否仍在重新分配？</text>
+    <text x="852" y="600" text-anchor="middle" class="small">类比边界：饼干会吸湿且无铝箔约束</text>
+
+    <path d="M610 845 C730 845 760 845 850 845" fill="none" stroke="#4c87a8" stroke-width="5"/>
+    <polygon points="850,845 827,832 827,858" fill="#4c87a8"/>
+    <rect x="675" y="791" width="355" height="86" rx="16" fill="#eaf4f9" stroke="#7fb0c9" stroke-width="2"/>
+    <text x="852" y="820" text-anchor="middle" class="mapping">问：控制步骤是否从连续液流</text>
+    <text x="852" y="849" text-anchor="middle" class="mapping">切换为气相/孤立储库传质？</text>
+    <text x="852" y="870" text-anchor="middle" class="small">类比边界：淀粉粒吸水、可变形且有粒内孔</text>
+  </g>
+
+  <!-- electrode right panel -->
+  <g filter="url(#shadow)">
+    <rect x="1090" y="190" width="640" height="780" rx="24" fill="#ffffff"/>
+  </g>
+  <g class="cn">
+    <text x="1140" y="235" class="cardTitle">一根厚向电极柱的真实问题</text>
+    <text x="1140" y="270" class="body">上表面：NMP 蒸发；下表面：铝箔不透并限制面内收缩</text>
+
+    <!-- electrode sequence -->
+    <text x="1140" y="324" class="body" font-weight="650">A. 可流动浓缩</text>
+    <rect x="1335" y="292" width="320" height="75" rx="7" fill="#80badb" stroke="#3f8fc2" stroke-width="2"/>
+    <rect x="1335" y="367" width="320" height="24" rx="3" fill="#adb8c0"/>
+    <g class="particle">
+      <circle cx="1362" cy="321" r="13"/><circle cx="1402" cy="340" r="15"/><circle cx="1443" cy="318" r="14"/>
+      <circle cx="1487" cy="340" r="15"/><circle cx="1532" cy="319" r="14"/><circle cx="1577" cy="340" r="15"/><circle cx="1622" cy="320" r="14"/>
+    </g>
+    <path d="M1390 282 L1390 258 M1495 282 L1495 258 M1600 282 L1600 258" stroke="#2f7db6" stroke-width="3"/>
+    <polygon points="1390,258 1382,272 1398,272" fill="#2f7db6"/>
+    <polygon points="1495,258 1487,272 1503,272" fill="#2f7db6"/>
+    <polygon points="1600,258 1592,272 1608,272" fill="#2f7db6"/>
+
+    <text x="1140" y="449" class="body" font-weight="650">B. E2：承载但孔内仍有 NMP</text>
+    <rect x="1335" y="417" width="320" height="68" rx="7" fill="url(#electrode)" stroke="#5e9155" stroke-width="2"/>
+    <rect x="1335" y="485" width="320" height="24" rx="3" fill="#adb8c0"/>
+    <g class="particle">
+      <circle cx="1360" cy="441" r="14"/><circle cx="1395" cy="458" r="15"/><circle cx="1432" cy="439" r="14"/>
+      <circle cx="1469" cy="459" r="15"/><circle cx="1506" cy="440" r="14"/><circle cx="1543" cy="458" r="15"/>
+      <circle cx="1580" cy="439" r="14"/><circle cx="1620" cy="458" r="15"/>
+    </g>
+    <path d="M1370 474 L1345 474 M1620 474 L1645 474" stroke="#d94841" stroke-width="4"/>
+    <polygon points="1345,474 1360,465 1360,483" fill="#d94841"/>
+    <polygon points="1645,474 1630,465 1630,483" fill="#d94841"/>
+
+    <text x="1140" y="568" class="body" font-weight="650">C. E3/E4：侵气、液桥退缩、孤立 NMP</text>
+    <rect x="1335" y="535" width="320" height="70" rx="7" fill="#dce6eb" stroke="#7d929f" stroke-width="2"/>
+    <rect x="1335" y="605" width="320" height="24" rx="3" fill="#adb8c0"/>
+    <path d="M1335 535 L1655 535 L1655 560 Q1600 550 1565 575 Q1510 592 1470 565 Q1415 545 1335 575 Z" fill="#ffffff" opacity="0.76"/>
+    <path d="M1335 575 Q1415 545 1470 565 Q1510 592 1565 575 Q1600 550 1655 560" fill="none" stroke="#3f8fc2" stroke-width="4"/>
+    <ellipse cx="1450" cy="580" rx="22" ry="10" fill="#5da7d1"/>
+    <ellipse cx="1580" cy="588" rx="18" ry="9" fill="#5da7d1"/>
+
+    <text x="1140" y="687" class="body" font-weight="650">D. E5 横切：哪条失效路径先越界？</text>
+    <rect x="1160" y="713" width="235" height="78" rx="13" fill="#fff1f1" stroke="#d94841" stroke-width="2"/>
+    <text x="1277" y="743" text-anchor="middle" class="body">D1 表面裂 / D2 内裂</text>
+    <text x="1277" y="772" text-anchor="middle" class="small">看裂尖、三维连通、起始时刻</text>
+    <rect x="1420" y="713" width="235" height="78" rx="13" fill="#eef7fc" stroke="#3f8fc2" stroke-width="2"/>
+    <text x="1537" y="743" text-anchor="middle" class="body">D3 气泡/空化/困液</text>
+    <text x="1537" y="772" text-anchor="middle" class="small">看入炉基线、脱气和压力时序</text>
+    <rect x="1160" y="811" width="235" height="78" rx="13" fill="#fff5e8" stroke="#d37a28" stroke-width="2"/>
+    <text x="1277" y="841" text-anchor="middle" class="body">D4 脱粘</text>
+    <text x="1277" y="870" text-anchor="middle" class="small">区分独立界面弱化与 D1 触底</text>
+    <rect x="1420" y="811" width="235" height="78" rx="13" fill="#f5f0fa" stroke="#7d6aa8" stroke-width="2"/>
+    <text x="1537" y="841" text-anchor="middle" class="body">D5 凹凸/鼓包/塌陷</text>
+    <text x="1537" y="870" text-anchor="middle" class="small">流动期与锁定后路径必须分开</text>
+
+    <text x="1140" y="925" class="body" font-weight="650">E6 达标后仍需观察冷却、静置和辊压前后</text>
+  </g>
+
+  <!-- forbidden transfer zone -->
+  <rect x="70" y="1010" width="1660" height="75" rx="18" fill="#fff0f0" stroke="#d94841" stroke-width="2"/>
+  <text x="100" y="1042" class="cn cardTitle" font-size="23" fill="#a62d2a">禁止直接迁移</text>
+  <text x="300" y="1042" class="cn body">水的扩散率/沸点、面包壳厚、饼干湿度阈值、淀粉双孔隙参数、食品裂纹率与延迟时间</text>
+  <text x="300" y="1070" class="cn body">也不能用“面包有壳”证明 LFP 结皮；类比只产生候选状态、模型开关和反证实验。</text>
+</svg>

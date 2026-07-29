@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+  <title id="title">六类多孔介质干燥过程的共同主干与差异</title>
+  <desc id="desc">以表格时间轴对比锂电极、土体、凝胶、胶体膜、陶瓷流延和聚合物涂层在初始状态、输运与收缩、锁定、后锁定加载和失效方式上的异同。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#5D6973"/></marker>
+    <style><![CDATA[
+      text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#24323A}
+      .title{font-size:40px;font-weight:600}.subtitle{font-size:21px;fill:#52616B}.head{font-size:20px;font-weight:600}.rowhead{font-size:22px;font-weight:600}.cell{font-size:17px}.small{font-size:15px;fill:#4D5B64}
+      .grid{stroke:#CDD6DC;stroke-width:2}.stage{fill:#EEF3F6}.common{fill:#EAF4EE;stroke:#A9C9B1;stroke-width:2}.note{fill:#F5F2FA;stroke:#D3C8E1;stroke-width:2}
+      .r1{fill:#EDF5EE}.r2{fill:#F7F0E8}.r3{fill:#F1EFFA}.r4{fill:#FFF6E6}.r5{fill:#F3F1EC}.r6{fill:#F6EFF9}
+    ]]></style>
+  </defs>
+  <rect width="1800" height="1100" fill="#FFFFFF"/>
+  <text x="70" y="65" class="title">六类多孔介质的干燥地图</text>
+  <text x="70" y="103" class="subtitle">共通点是“液体损失—体积/组分响应—承载结构—输运受限—应力/压力失效”；状态转换与参数不可混用</text>
+
+  <rect x="55" y="145" width="1690" height="105" rx="16" class="common"/>
+  <text x="82" y="183" class="head">可迁移的共同主干</text>
+  <rect x="315" y="165" width="235" height="60" rx="12" class="stage"/><text x="343" y="202" class="head">① 表面失液/蒸发</text>
+  <path d="M555 195H600" stroke="#5D6973" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="610" y="165" width="245" height="60" rx="12" class="stage"/><text x="638" y="202" class="head">② 浓缩/收缩/输运</text>
+  <path d="M860 195H905" stroke="#5D6973" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="915" y="165" width="245" height="60" rx="12" class="stage"/><text x="944" y="202" class="head">③ 骨架锁定/凝胶</text>
+  <path d="M1165 195H1210" stroke="#5D6973" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="1220" y="165" width="245" height="60" rx="12" class="stage"/><text x="1246" y="202" class="head">④ 孔压/毛细/受限收缩</text>
+  <path d="M1470 195H1515" stroke="#5D6973" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="1525" y="165" width="190" height="60" rx="12" class="stage"/><text x="1560" y="202" class="head">⑤ 失效分叉</text>
+
+  <rect x="55" y="280" width="1690" height="62" fill="#E9EEF1"/>
+  <line x1="270" y1="280" x2="270" y2="930" class="grid"/><line x1="560" y1="280" x2="560" y2="930" class="grid"/><line x1="850" y1="280" x2="850" y2="930" class="grid"/><line x1="1140" y1="280" x2="1140" y2="930" class="grid"/><line x1="1430" y1="280" x2="1430" y2="930" class="grid"/><line x1="1745" y1="280" x2="1745" y2="930" class="grid"/>
+  <text x="105" y="319" class="head">介质</text><text x="345" y="319" class="head">初始承载结构</text><text x="625" y="319" class="head">输运与体积变化</text><text x="925" y="319" class="head">关键状态转换</text><text x="1200" y="319" class="head">后转换加载</text><text x="1500" y="319" class="head">特征失效/形貌</text>
+
+  <rect x="55" y="342" width="1690" height="98" class="r1"/><text x="80" y="385" class="rowhead">锂电极</text><text x="80" y="415" class="small">LFP/CB/PVDF–NMP</text>
+  <text x="292" y="380" class="cell">高固含多组分浆料</text><text x="292" y="408" class="small">入炉时未必承载面内应力</text>
+  <text x="582" y="380" class="cell">各组分 Pe、沉降/固定</text><text x="582" y="408" class="small">湿厚收缩，NMP 向表面供给</text>
+  <text x="872" y="380" class="cell">颗粒/CB–PVDF 骨架锁定</text><text x="872" y="408" class="small">收缩停止 ≠ 液相断连</text>
+  <text x="1162" y="380" class="cell">毛细吸力、受限收缩</text><text x="1162" y="408" class="small">迁移梯度、低渗表层可能加入</text>
+  <text x="1452" y="380" class="cell">通道裂纹、内裂/空洞、脱粘</text><text x="1452" y="408" class="small">缺陷可顺序耦合</text>
+
+  <rect x="55" y="440" width="1690" height="98" class="r2"/><text x="80" y="483" class="rowhead">土体</text><text x="80" y="513" class="small">水–土颗粒–气</text>
+  <text x="292" y="478" class="cell">初始土骨架已存在</text><text x="292" y="506" class="small">可通过重排/收缩消化失水</text>
+  <text x="582" y="478" class="cell">非饱和液相输运</text><text x="582" y="506" class="small">自由收缩、吸力增加</text>
+  <text x="872" y="478" class="cell">开始脱饱和/侵气</text><text x="872" y="506" class="small">保水曲线和相对渗透率转换</text>
+  <text x="1162" y="478" class="cell">吸力 + 底部摩擦/边界约束</text><text x="1162" y="506" class="small">厚度与底摩擦强耦合</text>
+  <text x="1452" y="478" class="cell">表面网状裂纹、地下裂纹</text><text x="1452" y="506" class="small">裂纹反过来重写水分通道</text>
+
+  <rect x="55" y="538" width="1690" height="98" class="r3"/><text x="80" y="581" class="rowhead">凝胶</text><text x="80" y="611" class="small">溶剂–连续网络</text>
+  <text x="292" y="576" class="cell">成熟连续网络已承载</text><text x="292" y="604" class="small">模量、渗透率可随浓度强变</text>
+  <text x="582" y="576" class="cell">Darcy 溶剂流 + 网络收缩</text><text x="582" y="604" class="small">压力扩散时间约随 H² 增长</text>
+  <text x="872" y="576" class="cell">表面/内部收缩不同步</text><text x="872" y="604" class="small">有限变形与孔压梯度</text>
+  <text x="1162" y="576" class="cell">负液压、网络弹性、裂尖流动</text><text x="1162" y="604" class="small">空化和断裂为竞争路径</text>
+  <text x="1452" y="576" class="cell">空洞、内聚裂纹或两者耦合</text><text x="1452" y="604" class="small">空洞可是裂纹应力集中源</text>
+
+  <rect x="55" y="636" width="1690" height="98" class="r4"/><text x="80" y="679" class="rowhead">胶体膜</text><text x="80" y="709" class="small">分散颗粒–液体</text>
+  <text x="292" y="674" class="cell">自由分散/软颗粒体系</text><text x="292" y="702" class="small">起始多不承载长程应力</text>
+  <text x="582" y="674" class="cell">蒸发–扩散–沉降竞争</text><text x="582" y="702" class="small">Pe/沉降数定义浓度分布</text>
+  <text x="872" y="674" class="cell">拥挤/颗粒骨架形成</text><text x="872" y="702" class="small">弯月面随后进入孔喉</text>
+  <text x="1162" y="674" class="cell">毛细压、基底约束、塑性</text><text x="1162" y="702" class="small">G ∼ σ²H/E′ 与 Γᶜ 竞争</text>
+  <text x="1452" y="674" class="cell">通道裂纹、裂纹间距/路径</text><text x="1452" y="702" class="small">厚度超过状态相关 CCT 时传播</text>
+
+  <rect x="55" y="734" width="1690" height="98" class="r5"/><text x="80" y="777" class="rowhead">陶瓷流延</text><text x="80" y="807" class="small">陶瓷–聚合物–溶剂</text>
+  <text x="292" y="772" class="cell">高固含颗粒/黏结剂涂层</text><text x="292" y="800" class="small">与极片的组成结构最接近</text>
+  <text x="582" y="772" class="cell">失重、收缩、颗粒接触</text><text x="582" y="800" class="small">可同步测质量、应力与形貌</text>
+  <text x="872" y="772" class="cell">颗粒锁定/聚合物固定</text><text x="872" y="800" class="small">两者可贡献不同应力阶段</text>
+  <text x="1162" y="772" class="cell">颗粒主导峰值、聚合物主导松弛</text><text x="1162" y="800" class="small">增塑/湿态黏弹可强烈降应力</text>
+  <text x="1452" y="772" class="cell">裂纹、翘曲、界面脱离</text><text x="1452" y="800" class="small">裂后应力快速释放</text>
+
+  <rect x="55" y="832" width="1690" height="98" class="r6"/><text x="80" y="875" class="rowhead">聚合物涂层</text><text x="80" y="905" class="small">聚合物–溶剂/气体</text>
+  <text x="292" y="870" class="cell">均匀溶液，无颗粒孔喉</text><text x="292" y="898" class="small">浓度依赖扩散通常非线性</text>
+  <text x="582" y="870" class="cell">溶剂扩散 + 表面富集</text><text x="582" y="898" class="small">流动期可出现 Marangoni 形貌</text>
+  <text x="872" y="870" class="cell">表面凝胶/玻璃化成表皮</text><text x="872" y="898" class="small">必须由低渗/模量跃变证明</text>
+  <text x="1162" y="870" class="cell">表皮下降压、气体过饱和</text><text x="1162" y="898" class="small">溶剂蒸气、溶解气、表皮弹性竞争</text>
+  <text x="1452" y="870" class="cell">气泡/鼓泡、皱缩、宏孔</text><text x="1452" y="898" class="small">二维最终形貌常不具唯一性</text>
+
+  <rect x="55" y="970" width="1690" height="90" rx="16" class="note"/>
+  <text x="82" y="1005" class="head">对 LFP 建模的约束</text>
+  <text x="330" y="1005" class="cell">保留守恒、时间尺度、状态转换和能量判据；重新测量 NMP 物性、LFP/CB/PVDF 迁移与固定、孔喉/渗透率、湿态松弛和断裂能。</text>
+  <text x="330" y="1038" class="cell">不把土体保水参数、凝胶空化阈值、单分散胶体 CCT 或聚合物结皮阈值直接移植到商用极片。</text>
+</svg>

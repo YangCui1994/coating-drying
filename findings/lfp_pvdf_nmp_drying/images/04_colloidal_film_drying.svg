@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">胶体颗粒膜的浓缩、拥挤、毛细应力与临界开裂厚度</title>
+  <desc id="desc">四阶段示意自由分散颗粒通过蒸发与扩散竞争达到拥挤，液面进入孔隙后产生毛细应力，厚度超过临界值时通道裂纹传播。</desc>
+  <defs>
+    <marker id="blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#2D7FC1"/></marker>
+    <marker id="red" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#C64E4E"/></marker>
+    <marker id="gray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#5D6973"/></marker>
+    <style><![CDATA[
+      text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#24323A}
+      .title{font-size:38px;font-weight:600}.subtitle{font-size:20px;fill:#52616B}.pt{font-size:25px;font-weight:600}.label{font-size:18px}.small{font-size:15px;fill:#4D5B64}.eq{font-size:21px;font-weight:500}
+      .panel{fill:#F7FAFC;stroke:#C9D4DB;stroke-width:2}.liquid{fill:#DDEFFD}.particle{fill:#E7B45D;stroke:#A66E18;stroke-width:2}.base{fill:#8D979E}
+      .evap{stroke:#2D7FC1;stroke-width:4;marker-end:url(#blue)}.diff{stroke:#2D7FC1;stroke-width:3;stroke-dasharray:7 5;marker-end:url(#blue)}
+      .stress{stroke:#C64E4E;stroke-width:4;marker-end:url(#red)}.next{stroke:#5D6973;stroke-width:4;marker-end:url(#gray)}
+    ]]></style>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <text x="70" y="65" class="title">胶体颗粒膜：从输运状态图到临界开裂厚度</text>
+  <text x="70" y="100" class="subtitle">颗粒尺度同时改变扩散、孔喉毛细压、网络模量、屈服和断裂能</text>
+
+  <rect x="50" y="145" width="355" height="575" rx="18" class="panel"/>
+  <rect x="430" y="145" width="355" height="575" rx="18" class="panel"/>
+  <rect x="810" y="145" width="355" height="575" rx="18" class="panel"/>
+  <rect x="1190" y="145" width="355" height="575" rx="18" class="panel"/>
+  <path d="M405 430H425" class="next"/><path d="M785 430H805" class="next"/><path d="M1165 430H1185" class="next"/>
+
+  <text x="75" y="190" class="pt">① 自由分散</text>
+  <text x="75" y="220" class="small">蒸发、布朗扩散与沉降竞争</text>
+  <rect x="85" y="315" width="285" height="295" rx="8" class="liquid"/>
+  <rect x="78" y="610" width="300" height="26" class="base"/>
+  <circle cx="135" cy="385" r="25" class="particle"/><circle cx="240" cy="360" r="25" class="particle"/><circle cx="325" cy="420" r="25" class="particle"/>
+  <circle cx="180" cy="500" r="25" class="particle"/><circle cx="285" cy="540" r="25" class="particle"/><circle cx="115" cy="570" r="25" class="particle"/>
+  <line x1="120" y1="300" x2="120" y2="245" class="evap"/><line x1="230" y1="300" x2="230" y2="230" class="evap"/><line x1="335" y1="300" x2="335" y2="245" class="evap"/>
+  <path d="M205 455C225 425 245 485 268 450" class="diff"/>
+  <text x="95" y="675" class="eq">Peᵢ = vₑH / Dᵢ</text>
+  <text x="230" y="675" class="small">各可移动组分应分开定义</text>
+
+  <text x="455" y="190" class="pt">② 拥挤/骨架锁定</text>
+  <text x="455" y="220" class="small">颗粒接触后开始承载，液相仍连通</text>
+  <rect x="465" y="390" width="285" height="220" rx="8" class="liquid"/>
+  <rect x="458" y="610" width="300" height="26" class="base"/>
+  <circle cx="500" cy="430" r="34" class="particle"/><circle cx="570" cy="430" r="34" class="particle"/><circle cx="640" cy="430" r="34" class="particle"/><circle cx="710" cy="430" r="34" class="particle"/>
+  <circle cx="535" cy="490" r="34" class="particle"/><circle cx="605" cy="490" r="34" class="particle"/><circle cx="675" cy="490" r="34" class="particle"/>
+  <circle cx="500" cy="550" r="34" class="particle"/><circle cx="570" cy="550" r="34" class="particle"/><circle cx="640" cy="550" r="34" class="particle"/><circle cx="710" cy="550" r="34" class="particle"/>
+  <line x1="530" y1="375" x2="530" y2="275" class="evap"/><line x1="675" y1="375" x2="675" y2="275" class="evap"/>
+  <text x="470" y="680" class="label">拥挤 ≠ 表面结皮 ≠ 液相断连</text>
+
+  <text x="835" y="190" class="pt">③ 毛细排液</text>
+  <text x="835" y="220" class="small">弯月面进入孔喉，负液压转化为面内拉应力</text>
+  <rect x="845" y="390" width="285" height="220" rx="8" fill="#EEF5F8"/>
+  <rect x="838" y="610" width="300" height="26" class="base"/>
+  <circle cx="880" cy="430" r="34" class="particle"/><circle cx="950" cy="430" r="34" class="particle"/><circle cx="1020" cy="430" r="34" class="particle"/><circle cx="1090" cy="430" r="34" class="particle"/>
+  <circle cx="915" cy="490" r="34" class="particle"/><circle cx="985" cy="490" r="34" class="particle"/><circle cx="1055" cy="490" r="34" class="particle"/>
+  <circle cx="880" cy="550" r="34" class="particle"/><circle cx="950" cy="550" r="34" class="particle"/><circle cx="1020" cy="550" r="34" class="particle"/><circle cx="1090" cy="550" r="34" class="particle"/>
+  <path d="M914 405Q932 430 950 405" fill="#75B8E6" stroke="#2D7FC1" stroke-width="3"/><path d="M984 465Q1002 490 1020 465" fill="#75B8E6" stroke="#2D7FC1" stroke-width="3"/>
+  <line x1="940" y1="650" x2="855" y2="650" class="stress"/><line x1="1035" y1="650" x2="1120" y2="650" class="stress"/>
+  <text x="850" y="690" class="eq">pᶜ ≈ 2γ cosθ / rₜₕₒₒₐₜ</text>
+
+  <text x="1215" y="190" class="pt">④ 通道裂纹/CCT</text>
+  <text x="1215" y="220" class="small">强度控制起裂，能量判据控制持续传播</text>
+  <rect x="1225" y="390" width="285" height="220" rx="8" fill="#EEF5F8"/>
+  <rect x="1218" y="610" width="300" height="26" class="base"/>
+  <circle cx="1260" cy="430" r="34" class="particle"/><circle cx="1330" cy="430" r="34" class="particle"/><circle cx="1400" cy="430" r="34" class="particle"/><circle cx="1470" cy="430" r="34" class="particle"/>
+  <circle cx="1295" cy="490" r="34" class="particle"/><circle cx="1365" cy="490" r="34" class="particle"/><circle cx="1435" cy="490" r="34" class="particle"/>
+  <circle cx="1260" cy="550" r="34" class="particle"/><circle cx="1330" cy="550" r="34" class="particle"/><circle cx="1400" cy="550" r="34" class="particle"/><circle cx="1470" cy="550" r="34" class="particle"/>
+  <path d="M1370 390L1355 440L1373 485L1355 535L1368 610" fill="none" stroke="#C64E4E" stroke-width="11"/>
+  <text x="1228" y="675" class="eq">G = Cσ²H / E′ ≥ Γᶜ</text>
+  <text x="1228" y="704" class="small">Hᶜ(t) = E′(t)Γᶜ(t) / [Cσ²(t)]</text>
+
+  <rect x="70" y="765" width="1460" height="90" rx="14" fill="#F1F5F7"/>
+  <text x="95" y="800" class="label">对 LFP 的关键修正：用 LFP、炭黑团聚体和溶解 PVDF 的独立输运/固定动力学，并使 E′、τᵣ、Γᶜ 随 NMP 含量和组成演化。</text>
+  <text x="95" y="832" class="label">不能只用 D50：至少同时记录一次/二次颗粒、团聚、孔喉、比表面积和湿态力学。</text>
+</svg>
