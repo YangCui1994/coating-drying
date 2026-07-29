@@ -38,6 +38,7 @@
 - [`18_kumberg_2019_deep_read.md`](18_kumberg_2019_deep_read.md)：逐图、逐表、逐公式证据审计，含实验重建、原文内部矛盾、右删失、LFP/PVDF–NMP 迁移边界和当前模型参数可辨识性。
 - [`19_schabel_thick_coating_cracking_map.md`](19_schabel_thick_coating_cracking_map.md)：将 Schabel 2011–2026 年锂电干燥工作按“直接开裂证据—失效前状态—候选干预—设备放大”分级，另将三项燃料电池催化层直接开裂研究单列为跨体系旁证，并映射到本项目 E0–E6、D1–D5、H1/H5/H6/H9/H10 与实验计划。
 - [`20_capillary_gradient_constraint_and_interfacial_shear.md`](20_capillary_gradient_constraint_and_interfacial_shear.md)：以六面板机制图呈现毛细加载—自由收缩—约束应力—载荷传递—裂纹储能主线，把详细推导放入正文；并用“自由膜 100→97、约束膜保持近 100”的反事实严格解释应力符号、涂层–铝箔受力平衡，以及厚向梯度、弯曲倾向与界面剪切的区别。
+- [`21_dawson_thesis_chapter5_full_translation_zh.md`](21_dawson_thesis_chapter5_full_translation_zh.md)：Dawson 2025 博士论文第 5 章完整中文翻译，覆盖 PDF pp.117–141 的全部正文、方法、结果、结论、贡献说明、表 5.4、图 5.33–5.41 图注及图内文字对照，并保留逐页来源与原引用编号。
 - [`images/README.md`](images/README.md)：多孔介质示意图、E0–E6 状态时间轴、缺陷判别图和烘焙类比图索引。
 - [`literature/README.md`](literature/README.md)：各报告核心文献原文入口、离线 PDF 与中文导读说明。
 - [`evidence_matrix.csv`](evidence_matrix.csv)：以机制主张为行的证据矩阵。
