@@ -32,8 +32,12 @@
       .body { font-size: 21px; }
       .small { font-size: 18px; fill: #4b5966; }
       .tiny { font-size: 16px; fill: #4b5966; }
-      .eq { font-size: 24px; font-family: "STIX Two Math", "Times New Roman", "PingFang SC", serif; }
-      .eq-small { font-size: 20px; font-family: "STIX Two Math", "Times New Roman", "PingFang SC", serif; }
+      .eq { font-size: 24px; font-family: "Times New Roman", "STIX Two Text", "STIXGeneral", serif; font-style: italic; }
+      .eq-small { font-size: 20px; font-family: "Times New Roman", "STIX Two Text", "STIXGeneral", serif; font-style: italic; }
+      .math-var { font-family: "Times New Roman", "STIX Two Text", "STIXGeneral", serif; font-style: italic; }
+      .math-sub { baseline-shift: -24%; font-size: 72%; font-family: "Times New Roman", "STIX Two Text", "STIXGeneral", serif; }
+      .math-sup { baseline-shift: 42%; font-size: 72%; font-family: "Times New Roman", "STIX Two Text", "STIXGeneral", serif; }
+      .math-rm { font-style: normal; }
       .blue { fill: #1769aa; }
       .red { fill: #b42318; }
       .orange { fill: #b85c00; }
@@ -64,7 +68,7 @@
   <line x1="120" y1="330" x2="120" y2="213" class="blue-line" marker-end="url(#arrow-blue)"/>
   <line x1="225" y1="330" x2="225" y2="213" class="blue-line" marker-end="url(#arrow-blue)"/>
   <line x1="330" y1="330" x2="330" y2="213" class="blue-line" marker-end="url(#arrow-blue)"/>
-  <text x="225" y="197" text-anchor="middle" class="body blue">溶剂通量 Jz ↑</text>
+  <text x="225" y="197" text-anchor="middle" class="body blue">溶剂通量 <tspan class="math-var">J</tspan><tspan class="math-sub math-var">z</tspan> ↑</text>
   <text x="225" y="222" text-anchor="middle" class="tiny">质量迁移 ≠ 机械力</text>
 
   <circle cx="135" cy="350" r="48" class="particle"/>
@@ -74,14 +78,14 @@
   <path d="M174 328 Q220 292 266 328" class="blue-line" opacity="0.5"/>
   <line x1="151" y1="350" x2="194" y2="350" class="blue-line" marker-end="url(#arrow-blue)"/>
   <line x1="289" y1="350" x2="246" y2="350" class="blue-line" marker-end="url(#arrow-blue)"/>
-  <text x="220" y="379" text-anchor="middle" class="tiny blue">Fcap：颗粒相互靠近</text>
-  <text x="220" y="405" text-anchor="middle" class="eq blue">pc = pg − pl &gt; 0</text>
+  <text x="220" y="379" text-anchor="middle" class="tiny blue"><tspan class="math-var">F</tspan><tspan class="math-sub math-rm">cap</tspan>：颗粒相互靠近</text>
+  <text x="220" y="405" text-anchor="middle" class="eq blue">p<tspan class="math-sub">c</tspan> = p<tspan class="math-sub">g</tspan> − p<tspan class="math-sub">l</tspan> &gt; 0</text>
 
   <rect x="410" y="195" width="430" height="202" rx="14" class="blue-box"/>
   <text x="430" y="240" class="body" font-weight="700">弯月面 / 液桥</text>
   <text x="430" y="285" class="body">颗粒靠近　·　孔隙缩小</text>
   <text x="430" y="325" class="small">毛细加载</text>
-  <text x="430" y="363" class="eq red">dpreferred ↓　⇒　εfree &lt; 0</text>
+  <text x="430" y="363" class="eq red">d<tspan class="math-sub math-rm">pref</tspan> ↓　⇒　ε<tspan class="math-sub math-rm">free</tspan> &lt; 0</text>
 
   <!-- Panel B -->
   <rect x="916" y="120" width="850" height="330" rx="18" class="panel"/>
@@ -95,7 +99,7 @@
   <line x1="1445" y1="208" x2="1478" y2="208" class="gray-line" marker-end="url(#arrow-gray)"/>
   <line x1="1647" y1="208" x2="1614" y2="208" class="gray-line" marker-end="url(#arrow-gray)"/>
   <text x="1546" y="215" text-anchor="middle" class="body">自由干态 97 mm</text>
-  <text x="1546" y="251" text-anchor="middle" class="eq green">εactual = εfree，σ∥ = 0</text>
+  <text x="1546" y="251" text-anchor="middle" class="eq green">ε<tspan class="math-sub math-rm">actual</tspan> = ε<tspan class="math-sub math-rm">free</tspan>；σ<tspan class="math-sub">∥</tspan> = 0</text>
 
   <text x="956" y="300" class="body" font-weight="700">粘结铝箔</text>
   <rect x="1050" y="278" width="622" height="55" rx="8" class="film"/>
@@ -105,7 +109,7 @@
   <text x="1361" y="313" text-anchor="middle" class="small">虚线：骨架偏好的 97 mm</text>
   <line x1="1190" y1="300" x2="1090" y2="300" class="red-line" marker-end="url(#arrow-red)"/>
   <line x1="1532" y1="300" x2="1632" y2="300" class="red-line" marker-end="url(#arrow-red)"/>
-  <text x="1361" y="392" text-anchor="middle" class="eq red">σ∥ = E′(εactual − εfree) ≈ −E′εfree &gt; 0</text>
+  <text x="1361" y="392" text-anchor="middle" class="eq red">σ<tspan class="math-sub">∥</tspan> = E′(ε<tspan class="math-sub math-rm">actual</tspan> − ε<tspan class="math-sub math-rm">free</tspan>) ≈ −E′ ε<tspan class="math-sub math-rm">free</tspan> &gt; 0</text>
 
   <!-- Panel C -->
   <rect x="34" y="472" width="850" height="392" rx="18" class="panel"/>
@@ -118,10 +122,10 @@
   <text x="46" y="569" class="body">z</text>
 
   <text x="101" y="586" class="body" font-weight="700">表层：先干、先锁定</text>
-  <text x="101" y="618" class="small">NMP↓　E′↑　τr↑　|εfree|↑</text>
+  <text x="101" y="618" class="small">NMP↓　<tspan class="math-var">E′</tspan>↑　<tspan class="math-var">τ</tspan><tspan class="math-sub math-var">r</tspan>↑　|<tspan class="math-var">ε</tspan><tspan class="math-sub math-rm">free</tspan>|↑</text>
   <line x1="260" y1="645" x2="144" y2="645" class="red-line" marker-end="url(#arrow-red)"/>
   <line x1="374" y1="645" x2="490" y2="645" class="red-line" marker-end="url(#arrow-red)"/>
-  <text x="317" y="670" text-anchor="middle" class="small red">较早出现较大 σ∥</text>
+  <text x="317" y="670" text-anchor="middle" class="small red">较早出现较大 <tspan class="math-var">σ</tspan><tspan class="math-sub math-var">∥</tspan></text>
 
   <text x="101" y="714" class="body" font-weight="700">底层：后干、仍可松弛</text>
   <text x="101" y="746" class="small">NMP↑　E′↓　流动/蠕变仍可能</text>
@@ -135,12 +139,12 @@
   <text x="610" y="604" class="small">z</text>
   <text x="798" y="810" class="small">量值</text>
   <path d="M638 765 C680 752 711 711 800 620" stroke="#2376c9" stroke-width="4" fill="none"/>
-  <text x="752" y="644" class="tiny blue">锁定 λ、E′</text>
+  <text x="752" y="644" class="tiny blue">锁定 <tspan class="math-var">λ</tspan>、<tspan class="math-var">E′</tspan></text>
   <path d="M640 624 C690 655 730 715 802 760" stroke="#1769aa" stroke-width="4" fill="none" stroke-dasharray="8 6"/>
   <text x="746" y="742" class="tiny blue">NMP</text>
   <path d="M643 750 C695 720 735 676 802 646" stroke="#c9362b" stroke-width="4" fill="none"/>
-  <text x="730" y="688" class="tiny red">σ∥（示意）</text>
-  <text x="62" y="843" class="eq-small">σ∥(z)=E′(z)[ε₀+(z−zr)κ−εfree(z)]</text>
+  <text x="730" y="688" class="tiny red"><tspan class="math-var">σ</tspan><tspan class="math-sub math-var">∥</tspan>（示意）</text>
+  <text x="62" y="843" class="eq-small">σ<tspan class="math-sub">∥</tspan>(z) = E′(z)[ε<tspan class="math-sub">0</tspan> + (z − z<tspan class="math-sub">r</tspan>)κ − ε<tspan class="math-sub math-rm">free</tspan>(z)]</text>
 
   <!-- Panel D -->
   <rect x="916" y="472" width="850" height="392" rx="18" class="panel"/>
@@ -157,16 +161,16 @@
   <text x="1670" y="574" text-anchor="middle" class="body" font-weight="700">失效窗口</text>
   <text x="1030" y="646" text-anchor="middle" class="small">颗粒重排/流动</text>
   <text x="1240" y="646" text-anchor="middle" class="small">形成承载路径</text>
-  <text x="1480" y="646" text-anchor="middle" class="small">εfree 更负</text>
+  <text x="1480" y="646" text-anchor="middle" class="small"><tspan class="math-var">ε</tspan><tspan class="math-sub math-rm">free</tspan> 更负</text>
   <text x="1670" y="646" text-anchor="middle" class="small">强度/能量越界</text>
 
   <rect x="958" y="678" width="766" height="70" rx="12" class="red-box"/>
-  <text x="1341" y="720" text-anchor="middle" class="eq">dσ∥/dt + σ∥/τr = E′(dεactual/dt − dεfree/dt)</text>
+  <text x="1341" y="720" text-anchor="middle" class="eq"><tspan class="math-rm">d</tspan>σ<tspan class="math-sub">∥</tspan>/<tspan class="math-rm">d</tspan>t + σ<tspan class="math-sub">∥</tspan>/τ<tspan class="math-sub">r</tspan> = E′(<tspan class="math-rm">d</tspan>ε<tspan class="math-sub math-rm">actual</tspan>/<tspan class="math-rm">d</tspan>t − <tspan class="math-rm">d</tspan>ε<tspan class="math-sub math-rm">free</tspan>/<tspan class="math-rm">d</tspan>t)</text>
   <rect x="958" y="764" width="367" height="68" rx="12" class="blue-box"/>
-  <text x="1142" y="794" text-anchor="middle" class="body" font-weight="700">τr ≪ tload：松弛较快</text>
+  <text x="1142" y="794" text-anchor="middle" class="body" font-weight="700"><tspan class="math-var">τ</tspan><tspan class="math-sub math-var">r</tspan> ≪ <tspan class="math-var">t</tspan><tspan class="math-sub math-rm">load</tspan>：松弛较快</text>
   <text x="1142" y="820" text-anchor="middle" class="small">应力释放</text>
   <rect x="1357" y="764" width="367" height="68" rx="12" class="orange-box"/>
-  <text x="1541" y="794" text-anchor="middle" class="body" font-weight="700">τr ≫ tload：加载较快</text>
+  <text x="1541" y="794" text-anchor="middle" class="body" font-weight="700"><tspan class="math-var">τ</tspan><tspan class="math-sub math-var">r</tspan> ≫ <tspan class="math-var">t</tspan><tspan class="math-sub math-rm">load</tspan>：加载较快</text>
   <text x="1541" y="820" text-anchor="middle" class="small">拉应力积累</text>
 
   <!-- Panel E -->
@@ -184,7 +188,7 @@
 
   <line x1="390" y1="1084" x2="300" y2="1084" class="red-line" marker-end="url(#arrow-red)"/>
   <line x1="510" y1="1084" x2="600" y2="1084" class="red-line" marker-end="url(#arrow-red)"/>
-  <text x="450" y="1076" text-anchor="middle" class="body red">σ∥ &gt; 0，Nx 近似恒定</text>
+  <text x="450" y="1076" text-anchor="middle" class="body red"><tspan class="math-var">σ</tspan><tspan class="math-sub math-var">∥</tspan> &gt; 0，<tspan class="math-var">N</tspan><tspan class="math-sub math-var">x</tspan> 近似恒定</text>
 
   <line x1="124" y1="1137" x2="176" y2="1137" stroke="#d97706" stroke-width="4" marker-end="url(#arrow-orange)"/>
   <line x1="192" y1="1137" x2="232" y2="1137" stroke="#d97706" stroke-width="3" marker-end="url(#arrow-orange)"/>
@@ -193,11 +197,11 @@
 
   <line x1="100" y1="997" x2="800" y2="997" stroke="#b9c2ca" stroke-width="2"/>
   <path d="M100 997 C145 997 170 962 235 958 L665 958 C730 962 755 997 800 997" stroke="#c9362b" stroke-width="4" fill="none"/>
-  <text x="450" y="952" text-anchor="middle" class="small red">膜内合力 Nx(x)</text>
-  <text x="66" y="1218" class="eq-small">Nx = ∫₀ʰ σxx dz　；　Mx = ∫₀ʰ(z−zr)σxx dz</text>
-  <text x="66" y="1249" class="eq-small">τi = −∂Nx/∂x</text>
+  <text x="450" y="952" text-anchor="middle" class="small red">膜内合力 <tspan class="math-var">N</tspan><tspan class="math-sub math-var">x</tspan>(<tspan class="math-var">x</tspan>)</text>
+  <text x="66" y="1218" class="eq-small">N<tspan class="math-sub">x</tspan> = ∫<tspan class="math-sub">0</tspan><tspan class="math-sup">h</tspan> σ<tspan class="math-sub">xx</tspan> <tspan class="math-rm">d</tspan>z　；　M<tspan class="math-sub">x</tspan> = ∫<tspan class="math-sub">0</tspan><tspan class="math-sup">h</tspan>(z − z<tspan class="math-sub">r</tspan>)σ<tspan class="math-sub">xx</tspan> <tspan class="math-rm">d</tspan>z</text>
+  <text x="66" y="1249" class="eq-small">τ<tspan class="math-sub">i</tspan> = −∂N<tspan class="math-sub">x</tspan>/∂x</text>
   <rect x="78" y="1264" width="762" height="40" rx="10" class="muted-box"/>
-  <text x="459" y="1291" text-anchor="middle" class="small">∂c/∂z → σ(z)、Mx　　≠　　∂Nx/∂x → 界面载荷传递剪切</text>
+  <text x="459" y="1291" text-anchor="middle" class="small"><tspan class="math-var">∂c/∂z</tspan> → <tspan class="math-var">σ(z)</tspan>、<tspan class="math-var">M</tspan><tspan class="math-sub math-var">x</tspan>　≠　<tspan class="math-var">∂N</tspan><tspan class="math-sub math-var">x</tspan><tspan class="math-var">/∂x</tspan> → 界面载荷传递剪切</text>
 
   <!-- Panel F -->
   <rect x="916" y="886" width="850" height="430" rx="18" class="panel"/>
@@ -208,30 +212,30 @@
   <path d="M1120 985 L1112 1022 L1128 1050 L1114 1080 L1125 1115 L1120 1155" fill="none" stroke="#20262b" stroke-width="8"/>
   <line x1="1095" y1="1064" x2="1020" y2="1064" class="red-line" marker-end="url(#arrow-red)"/>
   <line x1="1145" y1="1064" x2="1220" y2="1064" class="red-line" marker-end="url(#arrow-red)"/>
-  <text x="1120" y="960" text-anchor="middle" class="small red">通道裂纹由 σ∥ 张开</text>
+  <text x="1120" y="960" text-anchor="middle" class="small red">通道裂纹由 <tspan class="math-var">σ</tspan><tspan class="math-sub math-var">∥</tspan> 张开</text>
 
   <rect x="1310" y="978" width="410" height="93" rx="12" class="red-box"/>
   <text x="1515" y="1010" text-anchor="middle" class="body" font-weight="700">起裂定位（局部强度）</text>
-  <text x="1515" y="1049" text-anchor="middle" class="eq red">σmax ≥ σt(w)</text>
+  <text x="1515" y="1049" text-anchor="middle" class="eq red">σ<tspan class="math-sub math-rm">max</tspan> ≥ σ<tspan class="math-sub">t</tspan>(w)</text>
   <rect x="1310" y="1088" width="410" height="110" rx="12" class="orange-box"/>
   <text x="1515" y="1120" text-anchor="middle" class="body" font-weight="700">持续扩展（能量）</text>
-  <text x="1515" y="1154" text-anchor="middle" class="eq">Gch ≈ Cint ∫₀ʰ σ∥²/E′ dz</text>
-  <text x="1515" y="1184" text-anchor="middle" class="eq red">Gch ≥ Γc</text>
+  <text x="1515" y="1154" text-anchor="middle" class="eq">G<tspan class="math-sub math-rm">ch</tspan> ≈ C<tspan class="math-sub math-rm">int</tspan> ∫<tspan class="math-sub">0</tspan><tspan class="math-sup">h</tspan> σ<tspan class="math-sub">∥</tspan><tspan class="math-sup">2</tspan>/E′ <tspan class="math-rm">d</tspan>z</text>
+  <text x="1515" y="1184" text-anchor="middle" class="eq red">G<tspan class="math-sub math-rm">ch</tspan> ≥ Γ<tspan class="math-sub">c</tspan></text>
   <text x="944" y="1225" class="body">均匀近似：</text>
-  <text x="1070" y="1225" class="eq">Gch ≈ C σ∥² h / E′</text>
+  <text x="1070" y="1225" class="eq">G<tspan class="math-sub math-rm">ch</tspan> ≈ C σ<tspan class="math-sub">∥</tspan><tspan class="math-sup">2</tspan> h / E′</text>
 
   <!-- Bottom causal chain -->
   <rect x="34" y="1342" width="1732" height="118" rx="18" fill="#eef3f6" stroke="#aeb9c4" stroke-width="2"/>
   <text x="900" y="1378" text-anchor="middle" class="body" font-weight="700">完整因果链（箭头表示机制顺序，不表示所有量在空间上同方向）</text>
   <text x="111" y="1424" class="body blue">毛细加载</text>
   <line x1="220" y1="1417" x2="300" y2="1417" class="gray-line" marker-end="url(#arrow-gray)"/>
-  <text x="322" y="1424" class="body">εfree &lt; 0</text>
+  <text x="322" y="1424" class="body"><tspan class="math-var">ε</tspan><tspan class="math-sub math-rm">free</tspan> &lt; 0</text>
   <line x1="431" y1="1417" x2="511" y2="1417" class="gray-line" marker-end="url(#arrow-gray)"/>
   <text x="533" y="1424" class="body orange">骨架锁定</text>
   <text x="650" y="1424" class="body">＋</text>
   <text x="680" y="1424" class="body">基材/邻层约束</text>
   <line x1="842" y1="1417" x2="922" y2="1417" class="gray-line" marker-end="url(#arrow-gray)"/>
-  <text x="944" y="1424" class="body red">σ∥ &gt; 0</text>
+  <text x="944" y="1424" class="body red"><tspan class="math-var">σ</tspan><tspan class="math-sub math-var">∥</tspan> &gt; 0</text>
   <line x1="1042" y1="1417" x2="1122" y2="1417" class="gray-line" marker-end="url(#arrow-gray)"/>
   <text x="1144" y="1424" class="body">弹性能累积</text>
   <line x1="1270" y1="1417" x2="1350" y2="1417" class="gray-line" marker-end="url(#arrow-gray)"/>
