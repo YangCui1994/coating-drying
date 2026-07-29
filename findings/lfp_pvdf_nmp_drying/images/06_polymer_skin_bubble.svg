@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">聚合物溶液涂层的结皮、气泡、鼓泡和表面起伏</title>
+  <desc id="desc">展示聚合物溶液在表面富集后形成低渗表皮，表皮下方压力降低、溶解气体或溶剂蒸气形成气泡，并与鼓泡、皱缩和 Marangoni 流动形貌区分。</desc>
+  <defs>
+    <linearGradient id="polygrad" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#E2EEFA"/><stop offset="1" stop-color="#B58BD8"/></linearGradient>
+    <marker id="blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#2D7FC1"/></marker>
+    <marker id="purple" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#7855A4"/></marker>
+    <marker id="red" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#C64E4E"/></marker>
+    <marker id="gray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L0 6L9 3z" fill="#5D6973"/></marker>
+    <style><![CDATA[
+      text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#24323A}
+      .title{font-size:38px;font-weight:600}.subtitle{font-size:20px;fill:#52616B}.pt{font-size:24px;font-weight:600}.label{font-size:18px}.small{font-size:15px;fill:#4D5B64}
+      .panel{fill:#FAF8FC;stroke:#D4C8DF;stroke-width:2}.solution{fill:#E2EEFA}.polymer{fill:none;stroke:#8B62AE;stroke-width:5;stroke-linecap:round}.skin{fill:#9C6FBE}.base{fill:#8D979E}
+      .evap{stroke:#2D7FC1;stroke-width:4;marker-end:url(#blue)}.diff{stroke:#7855A4;stroke-width:3;stroke-dasharray:7 5;marker-end:url(#purple)}
+      .pressure{stroke:#C64E4E;stroke-width:4;marker-end:url(#red)}.next{stroke:#5D6973;stroke-width:4;marker-end:url(#gray)}
+    ]]></style>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <text x="70" y="65" class="title">聚合物溶液涂层：结皮、气泡与表面起伏</text>
+  <text x="70" y="100" class="subtitle">结皮是“低渗透/可承载表层”的可测假设，不能由最终表面完整反推</text>
+
+  <rect x="50" y="145" width="355" height="555" rx="18" class="panel"/>
+  <rect x="430" y="145" width="355" height="555" rx="18" class="panel"/>
+  <rect x="810" y="145" width="355" height="555" rx="18" class="panel"/>
+  <rect x="1190" y="145" width="355" height="555" rx="18" class="panel"/>
+  <path d="M405 420H425" class="next"/><path d="M785 420H805" class="next"/><path d="M1165 420H1185" class="next"/>
+
+  <text x="75" y="190" class="pt">① 均匀溶液涂层</text>
+  <text x="75" y="220" class="small">溶剂扩散率和聚合物迁移率随浓缩下降</text>
+  <rect x="85" y="320" width="285" height="270" rx="8" class="solution"/><rect x="78" y="590" width="300" height="26" class="base"/>
+  <path d="M110 385C150 350 180 410 225 370" class="polymer"/><path d="M210 455C250 420 290 480 345 440" class="polymer"/><path d="M105 535C150 500 190 560 240 520" class="polymer"/>
+  <line x1="135" y1="305" x2="135" y2="245" class="evap"/><line x1="230" y1="305" x2="230" y2="230" class="evap"/><line x1="325" y1="305" x2="325" y2="245" class="evap"/>
+  <text x="95" y="660" class="label">流动期可发生扩散、对流与 Marangoni 重分布</text>
+
+  <text x="455" y="190" class="pt">② 表面富集/结皮</text>
+  <text x="455" y="220" class="small">表面先达凝胶阈值，内部仍为液态</text>
+  <rect x="465" y="340" width="285" height="250" rx="8" fill="url(#polygrad)"/><rect x="465" y="330" width="285" height="42" rx="8" class="skin"/><rect x="458" y="590" width="300" height="26" class="base"/>
+  <path d="M495 430C535 395 570 455 610 415" class="polymer"/><path d="M570 520C610 480 660 545 720 500" class="polymer"/>
+  <line x1="530" y1="315" x2="530" y2="245" class="evap"/><line x1="675" y1="315" x2="675" y2="245" class="evap"/>
+  <path d="M540 535C545 475 550 420 560 365" class="diff"/><path d="M665 535C670 475 680 420 690 365" class="diff"/>
+  <text x="475" y="650" class="small">必须观测：渗透率/模量跃变、表层组成或独立移动前沿</text>
+
+  <text x="835" y="190" class="pt">③ 表皮下降压与气泡</text>
+  <text x="835" y="220" class="small">夹气、溶解空气和溶剂蒸气可共同进入气泡</text>
+  <rect x="845" y="340" width="285" height="250" rx="8" fill="url(#polygrad)"/><rect x="845" y="330" width="285" height="42" rx="8" class="skin"/><rect x="838" y="590" width="300" height="26" class="base"/>
+  <ellipse cx="985" cy="480" rx="55" ry="42" fill="#FFFFFF" stroke="#C64E4E" stroke-width="5"/>
+  <circle cx="960" cy="455" r="7" fill="#91A8B5"/><circle cx="1000" cy="470" r="6" fill="#91A8B5"/>
+  <line x1="900" y1="445" x2="945" y2="465" class="pressure"/><line x1="1080" y1="445" x2="1025" y2="470" class="pressure"/>
+  <text x="855" y="280" class="small">pₗ 下降 + 气体过饱和 + 溶剂活度</text>
+  <text x="860" y="660" class="label">气泡成核 ≠ 气泡稳定增长 ≠ 真内聚断裂</text>
+
+  <text x="1215" y="190" class="pt">④ 最终形貌的多解性</text>
+  <text x="1215" y="220" class="small">表面起伏至少包含流动期与固化后两类路径</text>
+  <rect x="1225" y="340" width="285" height="250" rx="8" fill="#EADFF2"/><rect x="1218" y="590" width="300" height="26" class="base"/>
+  <path d="M1225 355C1270 305 1315 405 1360 350C1405 300 1460 405 1510 345L1510 405L1225 405Z" fill="#9C6FBE" opacity=".85"/>
+  <ellipse cx="1340" cy="500" rx="55" ry="40" fill="#FFFFFF" stroke="#C64E4E" stroke-width="5"/>
+  <path d="M1285 420C1320 445 1360 430 1395 405" fill="none" stroke="#7855A4" stroke-width="5" marker-end="url(#purple)"/>
+  <text x="1228" y="465" class="small">Marangoni：流动期浓度不均后冻结</text>
+  <text x="1228" y="565" class="small">鼓泡/泄压后塌陷；局部压缩可使表皮皱曲</text>
+  <text x="1230" y="660" class="label">需用形成时序、波长/方向和截面共同鉴别</text>
+
+  <rect x="70" y="750" width="1460" height="100" rx="14" fill="#F4EFF7"/>
+  <text x="95" y="786" class="label">对 LFP 内部空洞的高信息实验：标准/强化脱气对照 + 入炉湿膜气泡基线 + 锁定前后中断截面/三维连通性。</text>
+  <text x="95" y="820" class="label">仅有出炉二维截面时，不应把“表面完整+中层空洞”直接标记为结皮鼓泡。</text>
+</svg>

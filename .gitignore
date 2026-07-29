@@ -1,0 +1,11 @@
+# Local paper corpus intentionally excluded from GitHub publishing.
+/findings/papers_Yang/
+
+# Research/rendering scratch space; may contain derivatives of local papers.
+/tmp/
+
+# Operating-system and Python cache files.
+.DS_Store
+__pycache__/
+*.py[cod]
+
