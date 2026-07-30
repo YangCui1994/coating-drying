@@ -1,6 +1,8 @@
 # LFP–PVDF/NMP 厚向干燥应力：一维机制演示模型
 
 > **用途限定：** 本文建立的是“让因果链可计算、可看见”的第一代机制演示，不是已经用目标浆料校准的量产预测器。所有绝对时间、应力、断裂能和临界值都是示意参数的模型输出，不能直接转成炉温、线速或临界涂布重量。
+>
+> **独立输出版：** 面向对外技术讨论的完整物理量定义、CSV 字段字典、三组结果逐项解释和测试方法见 [`25_1d_drying_stress_model_independent_output_report.md`](25_1d_drying_stress_model_independent_output_report.md)。
 
 ## 1. 模型要把什么过程显示出来
 

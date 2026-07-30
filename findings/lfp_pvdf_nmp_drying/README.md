@@ -40,6 +40,9 @@
 - [`20_capillary_gradient_constraint_and_interfacial_shear.md`](20_capillary_gradient_constraint_and_interfacial_shear.md)：以六面板机制图呈现毛细加载—自由收缩—约束应力—载荷传递—裂纹储能主线，把详细推导放入正文；并用“自由膜 100→97、约束膜保持近 100”的反事实严格解释应力符号、涂层–铝箔受力平衡，以及厚向梯度、弯曲倾向与界面剪切的区别。
 - [`21_dawson_thesis_chapter5_full_translation_zh.md`](21_dawson_thesis_chapter5_full_translation_zh.md)：Dawson 2025 博士论文第 5 章完整中文翻译，覆盖 PDF pp.117–141 的全部正文、方法、结果、结论、贡献说明、表 5.4、图 5.33–5.41 图注及图内文字对照，并保留逐页来源与原引用编号。
 - [`22_fixed_thickness_cracking_reduction_parameter_map.md`](22_fixed_thickness_cracking_reduction_parameter_map.md)：在固定目标干厚度/面密度下，用同一块厚极片的四阶段剖面图说明“湿膜—受约束收缩—厚向状态不同步—D1–D5 竞争失效”，再将设备轨迹、横幅均匀性、气泡/团聚、固含–流变–孔网、PVDF/CBD 湿态力学及界面参数映射到加载、松弛和断裂抗力；原参数流程图保留为内部技术补充。
+- [`23_staged_experimental_program_for_cracking_model_identification.md`](23_staged_experimental_program_for_cracking_model_identification.md)：从临界厚度概率曲线、蒸发与气泡支路筛选、中断样时序定位到材料参数标定的分阶段验证方案。
+- [`24_external_report_cracking_control_model_and_validation.md`](24_external_report_cracking_control_model_and_validation.md)：面向外部技术讨论的厚极片开裂控制、模型结构和验证路径综合报告。
+- [`25_1d_drying_stress_model_independent_output_report.md`](25_1d_drying_stress_model_independent_output_report.md)：一维 NMP 输运—机械锁定—自由收缩—Maxwell 应力—通道裂纹风险计算的独立输出版；完整定义每个物理量、代码变量和 CSV 字段，说明直接测量、专门测试与联合反演边界，并逐场景、逐时间点解释最终计算结果。
 - [`images/README.md`](images/README.md)：多孔介质示意图、E0–E6 状态时间轴、缺陷判别图和烘焙类比图索引。
 - [`literature/README.md`](literature/README.md)：各报告核心文献原文入口、离线 PDF 与中文导读说明。
 - [`evidence_matrix.csv`](evidence_matrix.csv)：以机制主张为行的证据矩阵。
