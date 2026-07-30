@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">固定目标厚度下降低 LFP 极片开裂的参数—状态—失效流程图</title>
+  <desc id="desc">固定干厚度和面密度后，设备轨迹、浆料孔网、湿态力学和缺陷界面四类参数，先改变真实蒸发边界、锁定侵气与储能，再分流至五类失效；底部给出降低加载、增加耗散、提高抗力和减少缺陷四类控制目标。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f8fa}.frame{fill:#ffffff;stroke:#aeb7c2;stroke-width:1.5}.head{fill:#eef2f6;stroke:#7d8895;stroke-width:1.5}
+      .device{fill:#e7f1fb;stroke:#4d7fa8;stroke-width:1.5}.material{fill:#edf6e9;stroke:#668c55;stroke-width:1.5}
+      .mechanics{fill:#fff2dc;stroke:#b27a30;stroke-width:1.5}.defect{fill:#f1eafb;stroke:#8466a3;stroke-width:1.5}
+      .state{fill:#fff7cc;stroke:#a28b2a;stroke-width:1.7}.risk{fill:#fde9e7;stroke:#b6554f;stroke-width:2}
+      .failure{fill:#fff;stroke:#b6554f;stroke-width:1.5}.goal{fill:#eaf6f3;stroke:#4f8c7f;stroke-width:1.5}
+      .arrow{stroke:#53606d;stroke-width:2;fill:none;marker-end:url(#arrow)}.soft{stroke:#7f8b97;stroke-width:1.5;fill:none;marker-end:url(#arrow)}
+      .t{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;fill:#26313b}.title{font-size:24px;font-weight:600}.h{font-size:17px;font-weight:600}.b{font-size:15px}.s{font-size:13px;fill:#4e5965}.center{text-anchor:middle}.white{fill:#fff}
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#53606d"/></marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1200" height="760"/>
+  <text class="t title center" x="600" y="38">固定目标干厚度 / 面密度：从参数旋钮到 D1–D5 失效</text>
+
+  <rect class="head" x="355" y="58" width="490" height="58" rx="12"/>
+  <text class="t h center" x="600" y="83">产品设计固定</text>
+  <text class="t s center" x="600" y="103">Hdry、mA、目标孔隙率与电化学约束不变</text>
+
+  <path class="arrow" d="M600 116 L600 145"/>
+  <text class="t s center" x="600" y="139">只能调加载、耗散、抗力与缺陷</text>
+
+  <rect class="device" x="35" y="154" width="260" height="122" rx="12"/>
+  <text class="t h center" x="165" y="181">① 设备与干燥轨迹</text>
+  <text class="t b center" x="165" y="207">区温 · 风速 · 喷嘴 · 排风</text>
+  <text class="t b center" x="165" y="230">线速 · 气相 NMP · 横幅均匀性</text>
+  <text class="t s center" x="165" y="257">输出：Ts(t,y)、J(t,y)、pNMP,g</text>
+
+  <rect class="material" x="325" y="154" width="260" height="122" rx="12"/>
+  <text class="t h center" x="455" y="181">② 浆料与孔网</text>
+  <text class="t b center" x="455" y="207">固含 · 流变 · 团聚 · BET</text>
+  <text class="t b center" x="455" y="230">孔喉 · 渗透率 · NMP 库存</text>
+  <text class="t s center" x="455" y="257">输出：湿厚、k(S)、rthroat、μ</text>
+
+  <rect class="mechanics" x="615" y="154" width="260" height="122" rx="12"/>
+  <text class="t h center" x="745" y="181">③ 湿态力学与 CBD</text>
+  <text class="t b center" x="745" y="207">PVDF / 炭黑 · 松弛 · 塑性</text>
+  <text class="t b center" x="745" y="230">层内韧性 · 厚向组分分布</text>
+  <text class="t s center" x="745" y="257">输出：τr、E′、Γc、自由收缩</text>
+
+  <rect class="defect" x="905" y="154" width="260" height="122" rx="12"/>
+  <text class="t h center" x="1035" y="181">④ 缺陷与界面</text>
+  <text class="t b center" x="1035" y="207">气泡 · 硬团聚 · 湿厚热点</text>
+  <text class="t b center" x="1035" y="230">铝箔状态 · primer · 张力</text>
+  <text class="t s center" x="1035" y="257">输出：缺陷尾部、Γint、约束</text>
+
+  <path class="soft" d="M165 276 C165 315 350 305 430 332"/>
+  <path class="soft" d="M455 276 L500 332"/>
+  <path class="soft" d="M745 276 L700 332"/>
+  <path class="soft" d="M1035 276 C1035 315 850 305 770 332"/>
+
+  <rect class="state" x="315" y="332" width="570" height="104" rx="14"/>
+  <text class="t h center" x="600" y="360">状态转换：参数不会跳过这一层直接“决定开裂”</text>
+  <text class="t b center" x="600" y="387">流平 / 收缩 → 局部锁定 → 跨厚承载 → 首次侵气 → 液路断连</text>
+  <text class="t s center" x="600" y="414">关注 Pe、液压均化 / 加载、松弛 / 加载，以及是否形成 Skin+</text>
+
+  <path class="arrow" d="M600 436 L600 468"/>
+
+  <rect class="risk" x="335" y="468" width="530" height="82" rx="14"/>
+  <text class="t h center" x="600" y="496">竞争判据</text>
+  <text class="t b center" x="600" y="522">储存弹性能 / Γc　·　气泡/空化驱动力　·　界面能量 / Γint</text>
+  <text class="t s center" x="600" y="542">固定 H 后：降低 σ 与缺陷，提高耗散与相应断裂抗力</text>
+
+  <path class="soft" d="M600 550 L600 580"/>
+  <path class="soft" d="M600 566 L105 566 L105 592"/>
+  <path class="soft" d="M600 566 L350 566 L350 592"/>
+  <path class="soft" d="M600 566 L600 592"/>
+  <path class="soft" d="M600 566 L850 566 L850 592"/>
+  <path class="soft" d="M600 566 L1095 566 L1095 592"/>
+
+  <rect class="failure" x="20" y="592" width="170" height="70" rx="10"/>
+  <text class="t h center" x="105" y="620">D1</text><text class="t b center" x="105" y="644">表面泥裂</text>
+  <rect class="failure" x="265" y="592" width="170" height="70" rx="10"/>
+  <text class="t h center" x="350" y="620">D2</text><text class="t b center" x="350" y="644">层内裂纹</text>
+  <rect class="failure" x="515" y="592" width="170" height="70" rx="10"/>
+  <text class="t h center" x="600" y="620">D3</text><text class="t b center" x="600" y="644">气泡 / 空洞</text>
+  <rect class="failure" x="765" y="592" width="170" height="70" rx="10"/>
+  <text class="t h center" x="850" y="620">D4</text><text class="t b center" x="850" y="644">界面脱层</text>
+  <rect class="failure" x="1010" y="592" width="170" height="70" rx="10"/>
+  <text class="t h center" x="1095" y="620">D5</text><text class="t b center" x="1095" y="644">表面起伏</text>
+
+  <rect class="goal" x="80" y="692" width="245" height="46" rx="10"/>
+  <text class="t h center" x="202" y="721">降低加载：Jpeak ↓</text>
+  <rect class="goal" x="345" y="692" width="245" height="46" rx="10"/>
+  <text class="t h center" x="468" y="721">增加耗散：松弛 ↑</text>
+  <rect class="goal" x="610" y="692" width="245" height="46" rx="10"/>
+  <text class="t h center" x="732" y="721">提高抗力：Γc / Γint ↑</text>
+  <rect class="goal" x="875" y="692" width="245" height="46" rx="10"/>
+  <text class="t h center" x="998" y="721">减少缺陷：尺寸尾部 ↓</text>
+</svg>
