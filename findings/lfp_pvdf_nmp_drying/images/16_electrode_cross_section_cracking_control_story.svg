@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">厚 LFP 极片从湿膜到开裂的剖面故事图</title>
+  <desc id="desc">四个连续剖面依次表示湿膜初态、蒸发固结与受约束收缩、厚向状态差异和载荷传递、竞争失效与同厚度优化方向。蓝色表示 NMP 输运，红色表示拉应力或损伤，绿色表示 LFP，橙色表示 CBD，灰色表示铝箔。</desc>
+
+  <defs>
+    <style>
+      .font { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; }
+      .panel-title { font-size: 23px; font-weight: 700; fill: #172033; }
+      .stage { font-size: 14px; font-weight: 700; fill: #ffffff; }
+      .label { font-size: 15px; fill: #263246; }
+      .small { font-size: 13px; fill: #526077; }
+      .tiny { font-size: 12px; fill: #65738a; }
+      .highlight { font-size: 14px; font-weight: 700; fill: #172033; }
+      .chip-title { font-size: 16px; font-weight: 700; fill: #172033; }
+      .chip-text { font-size: 13px; fill: #526077; }
+      .particle { fill: #88bd6b; stroke: #477a3b; stroke-width: 1.4; }
+      .carbon { fill: #3f4855; stroke: #262d36; stroke-width: 0.8; }
+      .binder { fill: none; stroke: #e69a38; stroke-width: 4; stroke-linecap: round; opacity: 0.9; }
+      .foil { fill: #aab3bf; stroke: #707b89; stroke-width: 1.5; }
+      .solvent { fill: #dceffc; stroke: #3b8ec2; stroke-width: 1.2; }
+      .crack { fill: none; stroke: #cf3e44; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .stress { fill: none; stroke: #cf3e44; stroke-width: 3; }
+      .transport { fill: none; stroke: #3187b9; stroke-width: 3; stroke-linecap: round; }
+      .capillary { fill: none; stroke: #74559b; stroke-width: 2.5; stroke-linecap: round; }
+      .constraint { fill: none; stroke: #5c6878; stroke-width: 2.5; }
+      .guide { fill: none; stroke: #8b98aa; stroke-width: 1.5; stroke-dasharray: 5 5; }
+    </style>
+
+    <linearGradient id="wetFilm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f5fc"/>
+      <stop offset="1" stop-color="#cce8f8"/>
+    </linearGradient>
+    <linearGradient id="stateGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2eadb"/>
+      <stop offset="0.44" stop-color="#e6efe4"/>
+      <stop offset="1" stop-color="#cce8f8"/>
+    </linearGradient>
+    <linearGradient id="dryFilm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8efe3"/>
+      <stop offset="1" stop-color="#dce8d7"/>
+    </linearGradient>
+    <pattern id="wetParticles" width="58" height="54" patternUnits="userSpaceOnUse">
+      <circle class="particle" cx="17" cy="18" r="13"/>
+      <circle class="particle" cx="47" cy="40" r="11"/>
+      <circle class="carbon" cx="34" cy="17" r="3.5"/>
+      <circle class="carbon" cx="13" cy="43" r="3"/>
+      <path class="binder" d="M27 22 C34 28, 34 32, 39 36"/>
+    </pattern>
+    <pattern id="denseParticles" width="52" height="46" patternUnits="userSpaceOnUse">
+      <circle class="particle" cx="14" cy="15" r="12"/>
+      <circle class="particle" cx="42" cy="33" r="11"/>
+      <circle class="carbon" cx="29" cy="14" r="3.2"/>
+      <circle class="carbon" cx="10" cy="37" r="3"/>
+      <path class="binder" d="M24 18 C30 22, 31 27, 34 30"/>
+    </pattern>
+    <pattern id="dryParticles" width="48" height="42" patternUnits="userSpaceOnUse">
+      <circle class="particle" cx="13" cy="13" r="11"/>
+      <circle class="particle" cx="38" cy="30" r="10"/>
+      <circle class="carbon" cx="27" cy="12" r="3"/>
+      <circle class="carbon" cx="9" cy="34" r="2.8"/>
+      <path class="binder" d="M22 16 C27 20, 29 24, 31 27"/>
+    </pattern>
+
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3187b9"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#cf3e44"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#74559b"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5c6878"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4f8b47"/>
+    </marker>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#334155" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" fill="#f5f7fa"/>
+  <g class="font">
+    <text x="700" y="48" text-anchor="middle" font-size="31" font-weight="750" fill="#172033">同一块厚 LFP 极片：从湿膜到竞争失效</text>
+    <text x="700" y="78" text-anchor="middle" font-size="15" fill="#526077">极片剖面机制图｜非定量｜“表层先锁定/低渗”是候选支路，不是默认事实</text>
+
+    <!-- Legend -->
+    <g transform="translate(335 99)">
+      <circle class="particle" cx="0" cy="0" r="8"/><text class="small" x="14" y="5">LFP</text>
+      <line class="binder" x1="74" y1="0" x2="94" y2="0"/><circle class="carbon" cx="84" cy="0" r="3"/><text class="small" x="101" y="5">CBD</text>
+      <path class="transport" d="M174 3 L196 3" marker-end="url(#arrowBlue)"/><text class="small" x="204" y="5">NMP 输运/蒸发</text>
+      <path class="capillary" d="M337 3 L359 3" marker-end="url(#arrowPurple)"/><text class="small" x="367" y="5">毛细负压</text>
+      <path class="stress" d="M458 3 L480 3" marker-end="url(#arrowRed)"/><text class="small" x="488" y="5">拉应力/损伤</text>
+      <rect class="foil" x="598" y="-7" width="25" height="14"/><text class="small" x="631" y="5">铝箔</text>
+    </g>
+
+    <!-- Panels -->
+    <rect class="panel" x="30" y="130" width="310" height="565" rx="16" filter="url(#softShadow)"/>
+    <rect class="panel" x="373" y="130" width="310" height="565" rx="16" filter="url(#softShadow)"/>
+    <rect class="panel" x="716" y="130" width="310" height="565" rx="16" filter="url(#softShadow)"/>
+    <rect class="panel" x="1059" y="130" width="310" height="565" rx="16" filter="url(#softShadow)"/>
+
+    <!-- Inter-panel arrows -->
+    <path d="M344 412 L365 412" stroke="#78869a" stroke-width="3" marker-end="url(#arrowGray)"/>
+    <path d="M687 412 L708 412" stroke="#78869a" stroke-width="3" marker-end="url(#arrowGray)"/>
+    <path d="M1030 412 L1051 412" stroke="#78869a" stroke-width="3" marker-end="url(#arrowGray)"/>
+
+    <!-- A: wet film -->
+    <g>
+      <circle cx="61" cy="165" r="19" fill="#387fac"/><text class="stage" x="61" y="171" text-anchor="middle">A</text>
+      <text class="panel-title" x="90" y="172">湿膜初态</text>
+      <text class="small" x="185" y="204" text-anchor="middle">颗粒可重排 · NMP 连续</text>
+
+      <rect x="62" y="280" width="246" height="250" rx="7" fill="url(#wetFilm)" stroke="#6ca8c8" stroke-width="2"/>
+      <rect x="62" y="280" width="246" height="250" rx="7" fill="url(#wetParticles)" opacity="0.94"/>
+      <path d="M62 280 Q116 274, 174 281 T308 280" fill="none" stroke="#3b8ec2" stroke-width="3"/>
+      <rect class="foil" x="55" y="530" width="260" height="27" rx="2"/>
+
+      <!-- Initial bubble -->
+      <ellipse cx="270" cy="397" rx="20" ry="14" fill="#ffffff" stroke="#3b8ec2" stroke-width="2.5"/>
+      <circle cx="263" cy="392" r="3" fill="#d8edf8"/>
+      <path class="guide" d="M270 379 L270 245 L234 245"/>
+      <rect x="122" y="225" width="116" height="34" rx="17" fill="#edf7fc" stroke="#99c9e1"/>
+      <text class="highlight" x="180" y="247" text-anchor="middle">夹带气泡</text>
+
+      <!-- Agglomerate -->
+      <g transform="translate(99 385)">
+        <circle cx="0" cy="0" r="15" fill="#5b7550" stroke="#364d31"/>
+        <circle cx="17" cy="7" r="14" fill="#789367" stroke="#364d31"/>
+        <circle cx="8" cy="20" r="13" fill="#607b55" stroke="#364d31"/>
+      </g>
+      <path class="guide" d="M112 416 L112 587 L139 587"/>
+      <text class="small" x="148" y="592">硬团聚/弱区</text>
+
+      <text class="tiny" x="185" y="621" text-anchor="middle">初始缺陷不是开裂必需条件，</text>
+      <text class="tiny" x="185" y="640" text-anchor="middle">但会降低局部起裂门槛</text>
+      <rect x="76" y="655" width="218" height="25" rx="12" fill="#eef4f7"/>
+      <text class="small" x="185" y="672" text-anchor="middle">湿厚、气泡、团聚决定起点</text>
+    </g>
+
+    <!-- B: consolidation and constrained shrinkage -->
+    <g>
+      <circle cx="404" cy="165" r="19" fill="#387fac"/><text class="stage" x="404" y="171" text-anchor="middle">B</text>
+      <text class="panel-title" x="433" y="172">蒸发、固结与锁定</text>
+      <text class="small" x="528" y="204" text-anchor="middle">孔隙弯月面加载颗粒骨架</text>
+
+      <!-- evaporation/transport -->
+      <path class="transport" d="M438 290 C434 267, 445 251, 440 226" marker-end="url(#arrowBlue)"/>
+      <path class="transport" d="M491 286 C486 260, 499 245, 495 218" marker-end="url(#arrowBlue)"/>
+      <path class="transport" d="M545 286 C539 263, 553 246, 549 222" marker-end="url(#arrowBlue)"/>
+      <path class="transport" d="M600 290 C595 267, 608 252, 604 227" marker-end="url(#arrowBlue)"/>
+      <text class="small" x="528" y="306" text-anchor="middle" fill="#2677a7">表面蒸发</text>
+
+      <rect x="405" y="320" width="246" height="210" rx="6" fill="#e1eff1" stroke="#79a6aa" stroke-width="2"/>
+      <rect x="405" y="320" width="246" height="210" rx="6" fill="url(#denseParticles)" opacity="0.96"/>
+      <rect class="foil" x="398" y="530" width="260" height="27" rx="2"/>
+
+      <!-- local capillary loading, not a global upward force -->
+      <path class="capillary" d="M461 374 Q469 365 477 374"/>
+      <path class="capillary" d="M545 412 Q553 403 561 412"/>
+      <path class="capillary" d="M591 356 Q599 347 607 356"/>
+      <path class="capillary" d="M451 374 L443 374" marker-end="url(#arrowPurple)"/>
+      <path class="capillary" d="M487 374 L495 374" marker-end="url(#arrowPurple)"/>
+      <path class="capillary" d="M535 412 L527 412" marker-end="url(#arrowPurple)"/>
+      <path class="capillary" d="M571 412 L579 412" marker-end="url(#arrowPurple)"/>
+      <rect x="421" y="430" width="214" height="28" rx="14" fill="#f5fbfe" fill-opacity="0.94" stroke="#9bc9e0"/>
+      <text class="tiny" x="528" y="449" text-anchor="middle" fill="#266e98">毛细负压促使颗粒骨架收缩</text>
+
+      <!-- constrained shrinkage and tensile stress -->
+      <path class="constraint" d="M479 504 L449 504" marker-end="url(#arrowGray)"/>
+      <path class="constraint" d="M577 504 L607 504" marker-end="url(#arrowGray)"/>
+      <rect x="480" y="493" width="96" height="24" rx="12" fill="#ffffff" fill-opacity="0.92"/>
+      <text class="tiny" x="528" y="510" text-anchor="middle">自由收缩倾向</text>
+      <path class="stress" d="M500 474 L468 474" marker-end="url(#arrowRed)"/>
+      <path class="stress" d="M556 474 L588 474" marker-end="url(#arrowRed)"/>
+      <rect x="480" y="459" width="96" height="25" rx="12" fill="#fff5f5" fill-opacity="0.95"/>
+      <text class="highlight" x="528" y="477" text-anchor="middle" fill="#b7333a">面内拉应力</text>
+
+      <!-- foil constraint anchors -->
+      <path class="constraint" d="M421 557 L421 576"/>
+      <path class="constraint" d="M635 557 L635 576"/>
+      <path class="constraint" d="M421 572 L440 572" marker-end="url(#arrowGray)"/>
+      <path class="constraint" d="M635 572 L616 572" marker-end="url(#arrowGray)"/>
+      <text class="small" x="528" y="595" text-anchor="middle">铝箔/已锁定区域阻止自由面内收缩</text>
+      <rect x="419" y="617" width="218" height="46" rx="12" fill="#fff2e2" stroke="#edbd7a"/>
+      <text class="small" x="528" y="637" text-anchor="middle">关键不是“向上的毛细力”</text>
+      <text class="small" x="528" y="656" text-anchor="middle">而是骨架致密化被约束</text>
+    </g>
+
+    <!-- C: through-thickness state difference and load transfer -->
+    <g>
+      <circle cx="747" cy="165" r="19" fill="#387fac"/><text class="stage" x="747" y="171" text-anchor="middle">C</text>
+      <text class="panel-title" x="776" y="172">厚向状态不同步</text>
+      <text class="small" x="871" y="204" text-anchor="middle">输运受限 → 收缩/承载时序不同</text>
+
+      <rect x="748" y="310" width="246" height="220" rx="6" fill="url(#stateGradient)" stroke="#84969a" stroke-width="2"/>
+      <rect x="748" y="310" width="246" height="220" rx="6" fill="url(#denseParticles)" opacity="0.80"/>
+      <rect class="foil" x="741" y="530" width="260" height="27" rx="2"/>
+      <line x1="748" y1="393" x2="994" y2="393" stroke="#85929f" stroke-width="1.5" stroke-dasharray="6 5"/>
+
+      <!-- liquid supply through the pore network; blue arrows are transport, not mechanical force -->
+      <path class="transport" d="M782 514 C761 472, 807 443, 783 403 C765 372, 792 345, 785 309 C781 286, 794 261, 791 231" marker-end="url(#arrowBlue)" opacity="0.82"/>
+      <path class="transport" d="M930 508 C949 468, 912 436, 936 397 C953 368, 926 343, 935 307 C940 284, 927 260, 931 231" marker-end="url(#arrowBlue)" opacity="0.82"/>
+
+      <rect x="769" y="327" width="129" height="29" rx="14" fill="#f4ead8" stroke="#c9ad7e"/>
+      <text class="small" x="833" y="347" text-anchor="middle">较干 / 较早承载</text>
+      <rect x="844" y="478" width="129" height="29" rx="14" fill="#e2f2fb" stroke="#83b9d5"/>
+      <text class="small" x="908" y="498" text-anchor="middle">较湿 / 仍在供液</text>
+
+      <!-- stress differs through thickness -->
+      <path class="stress" d="M831 373 L775 373" marker-end="url(#arrowRed)"/>
+      <path class="stress" d="M911 373 L967 373" marker-end="url(#arrowRed)"/>
+      <path class="stress" d="M844 424 L804 424" marker-end="url(#arrowRed)" opacity="0.75"/>
+      <path class="stress" d="M898 424 L938 424" marker-end="url(#arrowRed)" opacity="0.75"/>
+      <text class="highlight" x="871" y="369" text-anchor="middle" fill="#b7333a">面内拉应力</text>
+
+      <!-- growing internal void -->
+      <ellipse cx="918" cy="453" rx="24" ry="14" fill="#fff" stroke="#cf3e44" stroke-width="2.5"/>
+      <path class="guide" d="M937 443 L953 430"/>
+      <rect x="884" y="410" width="101" height="27" rx="13" fill="#fff5f5" fill-opacity="0.95" stroke="#e99a9e"/>
+      <text class="tiny" x="934" y="428" text-anchor="middle" fill="#a92e35">潜在缺陷源</text>
+
+      <!-- interface load transfer -->
+      <path class="stress" d="M775 542 L812 542" marker-end="url(#arrowRed)"/>
+      <path class="stress" d="M967 542 L930 542" marker-end="url(#arrowRed)"/>
+      <path class="guide" d="M871 558 L871 582"/>
+      <text class="small" x="871" y="601" text-anchor="middle">界面剪切来自“收缩失配 + 约束”的载荷传递</text>
+      <text class="tiny" x="871" y="621" text-anchor="middle">不是厚向浓度梯度自动生成剪切</text>
+
+      <rect x="762" y="638" width="218" height="33" rx="16" fill="#edf7fc" stroke="#99c9e1"/>
+      <text class="small" x="871" y="660" text-anchor="middle">厚、低渗、高通量使不同步加重</text>
+    </g>
+
+    <!-- D: competing failures and controlled outcome -->
+    <g>
+      <circle cx="1090" cy="165" r="19" fill="#387fac"/><text class="stage" x="1090" y="171" text-anchor="middle">D</text>
+      <text class="panel-title" x="1119" y="172">竞争失效</text>
+      <text class="small" x="1214" y="204" text-anchor="middle">哪条路径先过阈值，哪条先出现</text>
+
+      <!-- damaged electrode -->
+      <path d="M1092 315 Q1130 304, 1166 316 T1234 312 T1336 321 L1336 530 L1092 530 Z" fill="url(#dryFilm)" stroke="#728c68" stroke-width="2"/>
+      <path d="M1092 315 Q1130 304, 1166 316 T1234 312 T1336 321 L1336 530 L1092 530 Z" fill="url(#dryParticles)" opacity="0.86"/>
+      <rect class="foil" x="1085" y="530" width="258" height="27" rx="2"/>
+
+      <!-- surface channel crack -->
+      <path class="crack" d="M1185 310 L1175 339 L1191 363 L1177 391 L1188 425 L1174 455 L1182 488 L1171 528"/>
+      <path class="guide" d="M1172 301 L1142 253"/>
+      <rect x="1087" y="226" width="119" height="31" rx="15" fill="#fde8e9" stroke="#e99a9e"/>
+      <text class="small" x="1147" y="247" text-anchor="middle" fill="#a92e35">D1 表面裂纹</text>
+
+      <!-- internal crack/void -->
+      <ellipse cx="1280" cy="418" rx="35" ry="16" fill="#ffffff" stroke="#cf3e44" stroke-width="3"/>
+      <path class="crack" d="M1244 418 L1224 410 L1208 420" stroke-width="3.5"/>
+      <path class="guide" d="M1302 401 L1329 365"/>
+      <rect x="1230" y="337" width="117" height="31" rx="15" fill="#fde8e9" stroke="#e99a9e"/>
+      <text class="small" x="1288" y="358" text-anchor="middle" fill="#a92e35">D2/D3 层内</text>
+
+      <!-- delamination -->
+      <path d="M1202 528 Q1241 510, 1280 528" fill="#ffffff" stroke="#cf3e44" stroke-width="3"/>
+      <path class="guide" d="M1268 522 L1280 501"/>
+      <rect x="1241" y="474" width="98" height="29" rx="14" fill="#fde8e9" stroke="#e99a9e"/>
+      <text class="small" x="1290" y="494" text-anchor="middle" fill="#a92e35">D4 脱层</text>
+      <text class="small" x="1333" y="296" text-anchor="end" fill="#a92e35">D5 起伏</text>
+
+      <text class="tiny" x="1214" y="585" text-anchor="middle">缺陷不必同时出现；表面完整也不排除层内损伤</text>
+
+      <!-- same thickness, lower-risk outcome -->
+      <rect x="1085" y="610" width="258" height="62" rx="10" fill="#eef7ed" stroke="#75a970" stroke-width="2"/>
+      <rect x="1094" y="633" width="240" height="22" rx="3" fill="url(#dryParticles)"/>
+      <rect class="foil" x="1094" y="655" width="240" height="9" rx="1"/>
+      <circle cx="1111" cy="621" r="10" fill="#4f8b47"/>
+      <path d="M1106 621 L1110 625 L1117 616" fill="none" stroke="#fff" stroke-width="2.5"/>
+      <text class="highlight" x="1128" y="626">同样目标厚度，降低风险</text>
+    </g>
+
+    <!-- Bottom control levers -->
+    <text x="700" y="730" text-anchor="middle" font-size="18" font-weight="700" fill="#263246">不同工艺参数主要影响哪些物理过程</text>
+
+    <g transform="translate(30 752)">
+      <rect width="310" height="105" rx="14" fill="#eaf5fb" stroke="#83b9d5" stroke-width="1.5"/>
+      <circle cx="30" cy="31" r="17" fill="#3187b9"/><text x="30" y="37" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">1</text>
+      <text class="chip-title" x="57" y="28">蒸发轨迹</text>
+      <text class="chip-text" x="57" y="50">降低锁定—侵气阶段的蒸发峰值</text>
+      <text class="chip-text" x="24" y="78">分区温度 · 风速 · NMP 气相 · 线速联动</text>
+    </g>
+    <g transform="translate(373 752)">
+      <rect width="310" height="105" rx="14" fill="#eef4f7" stroke="#aab5c2" stroke-width="1.5"/>
+      <circle cx="30" cy="31" r="17" fill="#66768a"/><text x="30" y="37" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">2</text>
+      <text class="chip-title" x="57" y="28">横幅与湿厚均匀</text>
+      <text class="chip-text" x="57" y="50">减少不同位置的状态/收缩差异</text>
+      <text class="chip-text" x="24" y="78">喷嘴与排风 · 模头供料 · 边缘管理</text>
+    </g>
+    <g transform="translate(716 752)">
+      <rect width="310" height="105" rx="14" fill="#fff3e7" stroke="#e6b574" stroke-width="1.5"/>
+      <circle cx="30" cy="31" r="17" fill="#d7892f"/><text x="30" y="37" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">3</text>
+      <text class="chip-title" x="57" y="28">初始缺陷</text>
+      <text class="chip-text" x="57" y="50">压低最大气泡、硬团聚与弱区</text>
+      <text class="chip-text" x="24" y="78">脱气 · 泵入口 · 过滤 · 混合末段</text>
+    </g>
+    <g transform="translate(1059 752)">
+      <rect width="310" height="105" rx="14" fill="#eef7ed" stroke="#82ad79" stroke-width="1.5"/>
+      <circle cx="30" cy="31" r="17" fill="#4f8b47"/><text x="30" y="37" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">4</text>
+      <text class="chip-title" x="57" y="28">孔网、耗散与抗力</text>
+      <text class="chip-text" x="57" y="50">保持供液通路，提高松弛与断裂抗力</text>
+      <text class="chip-text" x="24" y="78">固含/分散 · CBD 湿态力学 · 界面韧性</text>
+    </g>
+
+    <text x="700" y="885" text-anchor="middle" class="tiny">箭头表示因果结构，不表示力的绝对方向、大小或商用 LFP 的已验证数值窗口。</text>
+  </g>
+</svg>

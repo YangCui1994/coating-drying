@@ -19,6 +19,7 @@
 | [`13_capillary_constraint_cracking_schematic.png`](13_capillary_constraint_cracking_schematic.png) | 区分溶剂通量、毛细吸力、受限自由收缩、面内拉应力与气泡缺陷放大作用 | [`20_capillary_gradient_constraint_and_interfacial_shear.md`](../20_capillary_gradient_constraint_and_interfacial_shear.md) |
 | [`14_in_plane_tensile_stress_origin.png`](14_in_plane_tensile_stress_origin.png)（跨渲染器显示版；[SVG 源图](14_in_plane_tensile_stress_origin.svg)） | 六面板机制图：用“自由膜 100→97、约束膜保持近 100”的反事实连接毛细致密化、自由收缩、锁定/松弛、涂层–铝箔受力、边缘载荷传递与裂纹储能；公式采用真实上下标，详细解释移入正文 | [`20_capillary_gradient_constraint_and_interfacial_shear.md`](../20_capillary_gradient_constraint_and_interfacial_shear.md) |
 | [`15_fixed_thickness_cracking_control_map.svg`](15_fixed_thickness_cracking_control_map.svg) | 固定产品干厚度/面密度后，从设备轨迹、浆料孔网、湿态力学、缺陷/界面，经锁定–侵气状态与竞争判据，分流到 D1–D5 的参数决策流程图 | [`22_fixed_thickness_cracking_reduction_parameter_map.md`](../22_fixed_thickness_cracking_reduction_parameter_map.md) |
+| [`16_electrode_cross_section_cracking_control_story.svg`](16_electrode_cross_section_cracking_control_story.svg) | 同一块厚 LFP 极片的四阶段剖面图：湿膜初态、蒸发/固结/受约束收缩、厚向状态不同步与载荷传递、D1–D5 竞争失效；用不同箭头区分 NMP 输运、毛细负压和固体拉应力 | [`22_fixed_thickness_cracking_reduction_parameter_map.md`](../22_fixed_thickness_cracking_reduction_parameter_map.md) |
 
 ## 统一视觉编码
 
@@ -28,4 +29,4 @@
 - 橙色：聚合物粘结/网络相。
 - 绿/黄/棕/紫：分别用于 LFP、胶体/陶瓷颗粒、土体和凝胶/聚合物网络。
 
-图 8–10 额外使用线型区分证据状态：实线表示电极直接证据路径，虚线表示跨领域候选，点线表示目标 LFP 尚未证实。所有曲线和剖面均为机制示意，无定量刻度。
+图 8–10 额外使用线型区分证据状态：实线表示电极直接证据路径，虚线表示跨领域候选，点线表示目标 LFP 尚未证实。图 16 进一步把蓝色长箭头限定为 NMP 输运/蒸发、紫色孔隙箭头限定为毛细负压、红色箭头限定为固体拉应力或损伤，避免把三类物理量混为一个“毛细力”。所有曲线和剖面均为机制示意，无定量刻度。
