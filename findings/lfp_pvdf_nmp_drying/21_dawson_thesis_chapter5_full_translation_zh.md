@@ -11,6 +11,8 @@
 
 本文档是 Dawson 博士论文第 5 章的完整中文翻译。译文保留章标题、Overview、Introduction、Methods、Results and Discussion、Conclusions、Contributions、表 5.4、图 5.33–5.41 的图注、正文数值、单位、交叉引用和原始参考文献编号。本章没有编号公式，也没有独立参考文献表；文中的引文编号应与学位论文末尾的英文参考文献表配合使用。
 
+本文件只保留忠实翻译和译者必要校注，不把目标 LFP 的工艺建议混入 Dawson 原文。基于本章与全项目证据整理的配套分析见[《固定目标厚度下降低 LFP–PVDF/NMP 开裂：参数地图与工艺决策路径》](22_fixed_thickness_cracking_reduction_parameter_map.md)；其中的优先级和流程图属于本项目综合，不代表 Dawson 已验证的商用 LFP 处方。
+
 为便于在 iPad 和 VS Code 中阅读，原论文图像不在本 Markdown 中重复发布；每幅图的中文图注以及坐标轴、图例和关键图内文字均在正文中完整列出。iCloud 项目目录已经保存原始论文 PDF，可对照查看图像本体。GitHub 版本只发布翻译文字，不发布 `papers_Yang` 原始文献目录。
 
 原稿存在少量排印或交叉引用问题，译文不把它们伪装成新的实验结论：
