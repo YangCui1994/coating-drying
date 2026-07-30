@@ -33,12 +33,12 @@
 - [`13_formula_and_symbol_guide.md`](13_formula_and_symbol_guide.md)：全库原有 66 个行间公式的变量、单位、测量方法、量纲和适用边界，以及 Dawson 专属公式。
 - [`14_papers_yang_reading_notes.md`](14_papers_yang_reading_notes.md)：papers_Yang 中 17 个 PDF 的去重、逐篇解读、公式纠错和证据审计。
 - [`15_1d_thickness_stress_demonstrator.md`](15_1d_thickness_stress_demonstrator.md)：把 NMP 输运、连续锁定、受限自由收缩、变模量 Maxwell 应力和通道裂纹结构代理耦合成可复现的一维厚向机制演示。
-- [`16_kumberg_2019_full_translation_zh.md`](16_kumberg_2019_full_translation_zh.md)：Kumberg 2019 的完整中文翻译，保留公式、表格、图注、参考文献和逐页来源，并显式标出原文排印/量纲问题。
+- [`16_kumberg_2019_full_translation_zh.md`](16_kumberg_2019_full_translation_zh.md)（[PDF 版](16_kumberg_2019_full_translation_zh.pdf)）：Kumberg 2019 的完整中文翻译，保留公式、表格、图注、参考文献和逐页来源，并显式标出原文排印/量纲问题。
 - [`17_kumberg_2019_terminology.md`](17_kumberg_2019_terminology.md)：该文专有名词、易误译概念和公式符号中英对照；重点区分蒸发通量与线速度、CCT 与裂纹深度、粘附力与断裂能。
 - [`18_kumberg_2019_deep_read.md`](18_kumberg_2019_deep_read.md)：逐图、逐表、逐公式证据审计，含实验重建、原文内部矛盾、右删失、LFP/PVDF–NMP 迁移边界和当前模型参数可辨识性。
 - [`19_schabel_thick_coating_cracking_map.md`](19_schabel_thick_coating_cracking_map.md)：将 Schabel 2011–2026 年锂电干燥工作按“直接开裂证据—失效前状态—候选干预—设备放大”分级，另将三项燃料电池催化层直接开裂研究单列为跨体系旁证，并映射到本项目 E0–E6、D1–D5、H1/H5/H6/H9/H10 与实验计划。
 - [`20_capillary_gradient_constraint_and_interfacial_shear.md`](20_capillary_gradient_constraint_and_interfacial_shear.md)：以六面板机制图呈现毛细加载—自由收缩—约束应力—载荷传递—裂纹储能主线，把详细推导放入正文；并用“自由膜 100→97、约束膜保持近 100”的反事实严格解释应力符号、涂层–铝箔受力平衡，以及厚向梯度、弯曲倾向与界面剪切的区别。
-- [`21_dawson_thesis_chapter5_full_translation_zh.md`](21_dawson_thesis_chapter5_full_translation_zh.md)：Dawson 2025 博士论文第 5 章完整中文翻译，覆盖 PDF pp.117–141 的全部正文、方法、结果、结论、贡献说明、表 5.4、图 5.33–5.41 图注及图内文字对照，并保留逐页来源与原引用编号。
+- [`21_dawson_thesis_chapter5_full_translation_zh.md`](21_dawson_thesis_chapter5_full_translation_zh.md)（[PDF 版](21_dawson_thesis_chapter5_full_translation_zh.pdf)）：Dawson 2025 博士论文第 5 章完整中文翻译，覆盖 PDF pp.117–141 的全部正文、方法、结果、结论、贡献说明、表 5.4、图 5.33–5.41 图注及图内文字对照，并保留逐页来源与原引用编号。
 - [`22_fixed_thickness_cracking_reduction_parameter_map.md`](22_fixed_thickness_cracking_reduction_parameter_map.md)：在固定目标干厚度/面密度下，用同一块厚极片的四阶段剖面图说明“湿膜—受约束收缩—厚向状态不同步—D1–D5 竞争失效”，再将设备轨迹、横幅均匀性、气泡/团聚、固含–流变–孔网、PVDF/CBD 湿态力学及界面参数映射到加载、松弛和断裂抗力；原参数流程图保留为内部技术补充。
 - [`23_staged_experimental_program_for_cracking_model_identification.md`](23_staged_experimental_program_for_cracking_model_identification.md)：从临界厚度概率曲线、蒸发与气泡支路筛选、中断样时序定位到材料参数标定的分阶段验证方案。
 - [`24_external_report_cracking_control_model_and_validation.md`](24_external_report_cracking_control_model_and_validation.md)：面向外部技术讨论的厚极片开裂控制、模型结构和验证路径综合报告。
