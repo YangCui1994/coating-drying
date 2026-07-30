@@ -18,6 +18,7 @@
 | [`12_lfp_stress_scenario_comparison.svg`](12_lfp_stress_scenario_comparison.svg) | 薄/厚与温和/强蒸发边界对平均 NMP、峰值应力和通道裂纹结构代理的影响 | [`15_1d_thickness_stress_demonstrator.md`](../15_1d_thickness_stress_demonstrator.md) |
 | [`13_capillary_constraint_cracking_schematic.png`](13_capillary_constraint_cracking_schematic.png) | 区分溶剂通量、毛细吸力、受限自由收缩、面内拉应力与气泡缺陷放大作用 | [`20_capillary_gradient_constraint_and_interfacial_shear.md`](../20_capillary_gradient_constraint_and_interfacial_shear.md) |
 | [`14_in_plane_tensile_stress_origin.png`](14_in_plane_tensile_stress_origin.png)（跨渲染器显示版；[SVG 源图](14_in_plane_tensile_stress_origin.svg)） | 六面板机制图：用“自由膜 100→97、约束膜保持近 100”的反事实连接毛细致密化、自由收缩、锁定/松弛、涂层–铝箔受力、边缘载荷传递与裂纹储能；公式采用真实上下标，详细解释移入正文 | [`20_capillary_gradient_constraint_and_interfacial_shear.md`](../20_capillary_gradient_constraint_and_interfacial_shear.md) |
+| [`15_fixed_thickness_cracking_control_map.svg`](15_fixed_thickness_cracking_control_map.svg) | 固定产品干厚度/面密度后，从设备轨迹、浆料孔网、湿态力学、缺陷/界面，经锁定–侵气状态与竞争判据，分流到 D1–D5 的参数决策流程图 | [`22_fixed_thickness_cracking_reduction_parameter_map.md`](../22_fixed_thickness_cracking_reduction_parameter_map.md) |
 
 ## 统一视觉编码
 
